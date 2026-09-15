@@ -1,0 +1,4554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск поставщика в Китае</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Open+Sans:wght@300;400;600;700&family=Roboto+Flex:wght@100..1000&display=swap" rel="stylesheet">
+    <noscript>
+        <style>
+            .reveal,
+            .block8-flags__reveal,
+            .block10-glav-item {
+                opacity: 1 !important;
+                transform: none !important;
+                animation: none !important;
+            }
+        </style>
+    </noscript>
+    <style>
+        /* ========== CSS ПЕРЕМЕННЫЕ ========== */
+        :root {
+            /* ---------- ЦВЕТА ---------- */
+            --color-dark: rgba(43, 43, 44, 1);
+            --color-black: rgba(15, 18, 23, 1);
+            --color-white: rgba(255, 255, 255, 1);
+            --color-green-primary: rgba(76, 197, 116, 1);
+            --color-green-button: rgba(85, 205, 108, 1);
+            --color-green-button-light: rgba(97, 215, 119, 1);
+            --color-green-button-hover: rgba(112, 209, 144, 1);
+            --color-green-light-bg: rgba(219, 243, 227, 1);
+            --color-green-dark: rgba(61, 158, 93, 1);
+            --color-green-card-bg: rgba(183, 232, 199, 1);
+            --color-gray-text: rgba(85, 86, 88, 1);
+            --color-gray-text-secondary: #555658;
+            --color-gray-subtitle: rgba(128, 130, 132, 1);
+            --color-gray-bg: rgba(238, 239, 241, 1);
+            --color-gray-icon: rgba(170, 173, 176, 0.4);
+            --color-gray-line: rgba(230, 232, 234, 1);
+            --color-gray-border: rgba(213, 216, 220, 1);
+            --color-blue-dark: rgba(74, 90, 114, 1);
+            
+            /* ---------- РАЗМЕРЫ И ОТСТУПЫ ---------- */
+            --container-width: 1200px;
+            --section-padding: 80px 30px;
+            --padding-tablet: 60px 30px;
+            --padding-mobile: 60px 17px;
+            --padding-mobile-l: 60px 15px 60px 18px;
+            --padding-card: 30px 20px;
+            --padding-horizontal: 0 20px;
+            --padding-small: 15px;
+            --margin-large: 50px;
+            --margin-medium: 30px;
+            --gap-small: 20px;
+            --border-radius-sm: 10px;
+            --border-radius-md: 15px;
+            --border-radius-lg: 30px;
+            --border-radius-btn: 119px;
+            
+            /* ---------- ТИПОГРАФИКА ---------- */
+            --font-family-primary: 'Open Sans', sans-serif;
+            --font-family-secondary: 'Inter', sans-serif;
+            --font-size-h0: 50px;
+            --font-size-h1: 40px;
+            --font-size-h2: 20px;
+            --font-size-text: 16px;
+            --font-size-small: 14px;
+            --font-size-xs: 11px;
+            --font-size-mobile: 12px;
+            --font-size-large: 50px;
+            --font-size-medium: 18px;
+            --font-size-tablet-h1: 27px;
+            --font-weight-semibold: 600;
+            --line-height: 1.4;
+            
+            /* ---------- СПЕЦИФИЧЕСКИЕ ЗНАЧЕНИЯ ---------- */
+            --max-width-text: 741px;
+        }
+
+        @media (max-width: 450px) {
+            :root {
+                --font-size-small: 15px;
+            }
+        }
+
+        /* ========== АНИМАЦИИ ПОЯВЛЕНИЯ ЭЛЕМЕНТОВ ========== */
+        @keyframes block1-fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+        }
+
+        .reveal.is-inview {
+            animation: block1-fade-up 0.7s ease forwards;
+        }
+
+        /* Не отключаем анимации по prefers-reduced-motion:
+           на Windows часто выключены «эффекты анимации», и страница кажется без анимаций. */
+
+
+
+        /* ========== БАЗОВЫЕ СТИЛИ ========== */
+        
+        /* Reset стили для всех элементов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Основные стили HTML */
+        html {
+            overflow-x: hidden;
+            max-width: 100%;
+            scroll-behavior: smooth;
+        }
+
+        /* Основные стили Body */
+        body {
+            font-family: var(--font-family-primary);
+            font-weight: 400;
+            background-color: var(--color-white);
+            line-height: var(--line-height);
+            hyphens: none;
+            word-break: keep-all;
+            overflow-wrap: normal;
+            overflow-x: hidden;
+            max-width: 100%;
+            width: 100%;
+            color: var(--color-dark);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Контейнеры */
+        .main-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .section-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        section[id] {
+            scroll-margin-top: 24px;
+        }
+
+        /* ========== BLOCK1-GLAV: Hero секция ========== */
+        .block1-glav {
+            background-color: var(--color-white);
+            padding: var(--section-padding);
+        }
+
+        .block1-glav .section-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 49px;
+        }
+
+        .block1-glav-left-kv {
+            flex: 1 1 420px;
+            max-width: 540px;
+            min-width: 0;
+        }
+
+        .block1-glav-left-kv-services-text {
+            font-family: var(--font-family-secondary);
+            font-weight: 600;
+            font-size: var(--font-size-small);
+            color: var(--color-dark);
+            margin-bottom: 20px;
+        }
+
+        .block1-glav-left-kv-services-line {
+            max-width: 164px;
+            height: 5px;
+            background-color: var(--color-green-primary);
+        }
+
+        .block1-glav-left-kv-h {
+            font-family: var(--font-family-secondary);
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 1;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: var(--color-dark);
+        }
+
+        .block1-glav-right-kv {
+            flex: 1 1 360px;
+            min-width: 0;
+        }
+
+        .block1-glav-right-kv-img {
+            width: 100%;
+            height: 428px;
+            border-radius: var(--border-radius-sm);
+            object-fit: cover;
+        }
+
+        .block1-glav-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block1-glav-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: var(--color-dark);
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+        }
+
+        .block1-glav-list-item:nth-child(2) {
+            margin: 10px 0;
+        }
+
+        .block1-glav-list-icon {
+            width: 25px;
+            height: 25px;
+            flex: 0 0 25px;
+            margin-top: 2px;
+        }
+
+        .block1-glav-list-button {
+            width: 100%;
+            max-width: 352px;
+            height: 62px;
+            margin-top: 30px;
+            background-color: var(--color-green-button);
+            border: none;
+            border-radius: var(--border-radius-btn);
+            font-size: var(--font-size-text);
+            font-weight: 700;
+            color: var(--color-white);
+            text-align: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .block1-glav-list-button:hover {
+            background-color: var(--color-green-primary);
+        }
+
+        @media (max-width: 1000px) {
+            .block1-glav {
+                padding: var(--padding-tablet);
+            }
+
+            .block1-glav .section-container {
+                flex-direction: row;
+                align-items: stretch;
+                gap: 20px;
+            }
+
+            .block1-glav-left-kv {
+                flex: 1 1 380px;
+                max-width: none;
+                min-width: 0;
+            }
+
+            .block1-glav-list-icon{
+                width: 35px;
+                height: 35px;
+                flex: 0 0 35px;
+            }
+
+
+            .block1-glav-right-kv {
+                flex: 0 1 340px;
+                max-width: 340px;
+                min-width: 0;
+                order: 0;
+                width: auto;
+                display: flex;
+                align-items: flex-end;
+                align-self: stretch;
+            }
+
+            .block1-glav-right-kv-img {
+                width: 100%;
+                height: 455px;
+                object-fit: cover;
+                object-position: left bottom;
+                margin-top: auto;
+            }
+
+            .block1-glav-list-item:nth-child(2){
+                margin: 15px 0;
+            }
+
+            .block1-glav-left-kv-h {
+                font-size: 40px;
+                line-height: 1.25;
+            }
+
+            .block1-glav-list-button {
+                max-width: 189px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block1-glav {
+                padding: var(--padding-mobile);
+            }
+
+            .block1-glav .section-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .block1-glav-left-kv,
+            .block1-glav-right-kv {
+                max-width: none;
+                width: 100%;
+                flex: none;
+            }
+
+            .block1-glav-right-kv {
+                order: -1;
+            }
+
+            .block1-glav-left-kv-services-text {
+                font-size: 11px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .block1-glav-left-kv-h {
+                font-size: var(--font-size-h1);
+                margin-top: 15px;
+                margin-bottom: 0;
+                line-height: 1.2;
+            }
+
+            .block1-glav-list-icon {
+                width: 35px;
+                height: 35px;
+                flex: 0 0 35px;
+            }
+
+            .block1-glav-right-kv-img {
+                height: 226px;
+            }
+
+            .block1-glav-list {
+                gap: 15px;
+            }
+
+            .block1-glav-list-item {
+                font-size: var(--font-size-h2);
+                align-items: center;
+            }
+
+            .block1-glav-list-item:nth-child(2) {
+                margin: 0;
+            }
+
+            .block1-glav-list-button {
+                max-width: none;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block1-glav {
+                padding: 40px 17px 50px;
+            }
+
+            .block1-glav .section-container {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 20px;
+            }
+
+            .block1-glav-left-kv {
+                display: contents;
+            }
+
+            .block1-glav-left-kv-top {
+                order: 1;
+                width: 100%;
+            }
+
+            .block1-glav-left-kv-services-text {
+                font-size: 11px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .block1-glav-left-kv-services-line {
+                max-width: 110px;
+                height: 4px;
+            }
+
+            .block1-glav-left-kv-h {
+                font-family: var(--font-family-primary);
+                font-weight: 700;
+                line-height: 1.25;
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+
+            .block1-glav-right-kv {
+                order: 2;
+                display: block;
+                width: 100%;
+                max-width: none;
+                min-width: 0;
+                flex: none;
+                align-self: stretch;
+                margin-top: 0;
+            }
+
+            .block1-glav-right-kv-img {
+                width: 100%;
+                height: 246px;
+                object-fit: cover;
+                object-position: center;
+                margin-top: 0;
+                border-radius: var(--border-radius-sm);
+                display: block;
+            }
+
+            .block1-glav-list {
+                order: 3;
+                width: 100%;
+                gap: 12px;
+            }
+
+            .block1-glav-list-item {
+                font-size: var(--font-size-h2);
+                align-items: center;
+                gap: 10px;
+            }
+
+            .block1-glav-list-item:nth-child(2) {
+                margin: 0;
+            }
+
+            .block1-glav-list-icon {
+                width: 24px;
+                height: 24px;
+                flex: 0 0 24px;
+                margin-top: 0;
+            }
+
+            .block1-glav-list-button {
+                width: 100%;
+                max-width: none;
+                height: 54px;
+                margin-top: 24px;
+                border-radius: var(--border-radius-btn);
+                font-size: var(--font-size-text);
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block1-glav-list-icon{
+                width: 35px;
+                height: 35px;
+                flex: 0 0 35px;
+            }
+
+        /* ========== BLOCK2-GLAV: О нас ========== */
+        .block2-glav {
+            background-color: var(--color-gray-bg);
+            padding: var(--section-padding);
+        }
+
+        .block2-glav-h1 {
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-h1);
+            color: var(--color-dark);
+            margin-bottom: var(--margin-large);
+        }
+
+        .block2-glav-text {
+            font-size: var(--font-size-text);
+            color: var(--color-gray-text);
+        }
+
+        .block2-glav-text + .block2-glav-text {
+            margin-top: 1em;
+        }
+
+        @media (max-width: 1000px) {
+            .block2-glav {
+                padding: var(--padding-tablet);
+            }
+
+            .block2-glav-h1 {
+                font-size: var(--font-size-tablet-h1);
+                margin-bottom: var(--margin-medium);
+            }
+
+            .block2-glav-text {
+                max-width: var(--max-width-text);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block2-glav {
+                padding: var(--padding-mobile);
+            }
+
+            .block2-glav-text {
+                font-size: var(--font-size-small);
+                max-width: var(--max-width-text);
+            }
+        }
+
+
+
+
+        @media (max-width: 361px) {
+
+            .block2-glav-h1,
+            .block3-glav-h1,
+            .block4-glav-h1,
+            .block5-algo__title,
+            .block5-algo__step-title,
+            .block6-glav-cards-empty-h1,
+            .block7-tasks__title,
+            .block8-flags__title,
+            .block9-algo__title,
+            .block9-algo__step-title,
+            .block10-glav-title,
+            .block11-glav-h1,
+            .block11-glav-h1-mobile,
+            .block12-glav-h1
+            {
+                font-size: 27px;
+            }
+        }
+
+        /* ========== BLOCK3-GLAV: Преимущества ========== */
+        .block3-glav {
+            background-color: var(--color-white);
+            padding: var(--section-padding);
+        }
+
+        .block3-glav-h1 {
+            font-size: var(--font-size-h1);
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 25px;
+        }
+
+        .block3-glav-text {
+            font-size: var(--font-size-text);
+            line-height: var(--line-height);
+            color: var(--color-gray-text);
+        }
+
+        .block3-glav-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 34px;
+            margin-top: 50px;
+        }
+
+        .block3-glav-cards > .block3-glav-kv {
+            max-width: none;
+            min-height: 396px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block3-glav-kv {
+            max-width: 377px;
+            height: 396px;
+            background-color: var(--color-green-light-bg);
+            border-radius: var(--border-radius-sm);
+            padding: 0px 23px 0px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .block3-glav-kv-h3 {
+            font-size: var(--font-size-h2);
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+        .block3-glav-kv-text {
+            font-size: var(--font-size-text);
+            line-height: var(--line-height);
+            color: var(--color-gray-text);
+            max-width: 600px;
+        }
+
+        .block3-glav-kv-img {
+            position: absolute;
+            bottom: -5px;
+        }
+
+        .block3-glav-kv-img-1 {
+            right: -5px;
+            transition: content 0.3s ease;
+        }
+
+        .block3-glav-kv:nth-child(1):hover .block3-glav-kv-img-1 {
+            content: url('image/block3-glav/kv-img-1-hover.svg');
+        }
+
+        .block3-glav-kv-img-2 {
+            left: 5%;
+            transform: translateX(-50%);
+            max-height: 264px;
+        }
+
+        .block3-glav-kv-img-3 {
+            left: -5px;
+        }
+
+        .block3-glav-kv-img-4 {
+            left: 1%;
+            transform: translateX(-50%);
+        }
+
+        .block3-glav-kv-dots {
+            width: 70px;
+            height: 32px;
+            background: var(--color-white);
+            border-radius: var(--border-radius-sm);
+            position: absolute;
+            top: 185px;
+            left: 84.71px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            opacity: 0;
+        }
+
+        .block3-glav-kv-dots.animate {
+            opacity: 1;
+            animation: showDots 0.5s ease-in-out forwards, hideDots 0.3s ease-in-out 3s forwards;
+        }
+
+        .block3-glav-kv-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--color-blue-dark);
+            border-radius: 50%;
+            animation: typingDot 1.4s infinite ease-in-out;
+        }
+
+        .block3-glav-kv-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .block3-glav-kv-dot:nth-child(2) {
+            margin-top: -5px;
+            animation-delay: 0.2s;
+        }
+
+        .block3-glav-kv-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .block3-glav-kv-message {
+            background: var(--color-white);
+            border-radius: var(--border-radius-sm);
+            position: absolute;
+            top: 151px;
+            left: 19px;
+            padding: 10px 15PX;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-blue-dark);
+            opacity: 0;
+        }
+
+        .block3-glav-kv-message.animate {
+            animation: showMessage 1s ease-in-out 3s forwards;
+        }
+
+        .block3-glav-kv-big {
+            max-width: 789px;
+            height: 395px;
+            background-color: var(--color-dark);
+            border-radius: var(--border-radius-sm);
+            padding: var(--padding-card);
+            grid-column: 2 / 4;
+            grid-row: 2;
+            display: flex;
+            gap: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .block3-glav-kv-big-left {
+            flex: 1;
+            background: linear-gradient(90deg, rgba(112, 209, 144, 0.9) 0%, rgba(112, 209, 144, 0.9) 100%);
+            padding: var(--padding-card);
+            margin: -30px -20px -30px -20px;
+            position: relative;
+        }
+
+        .block3-glav-kv-big-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .block3-glav-kv-big-left::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -85px;
+            bottom: 0;
+            width: 140px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%);
+            transform: skew(-2deg);
+            z-index: 2;
+        }
+
+        .block3-glav-kv-big-right {
+            flex: 1;
+            position: relative;
+            padding: 0;
+            margin: -30px -20px -30px 0;
+            z-index: 4;
+        }
+
+        .block3-glav-kv-big-h3 {
+            font-size: var(--font-size-h2);
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 15px;
+            max-width: 730px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .block3-glav-kv-big-text {
+            font-size: var(--font-size-text);
+            line-height: var(--line-height);
+            color: var(--color-gray-bg);
+            max-width: 340px;
+            font-weight: 400;
+            position: relative;
+            z-index: 3;
+        }
+
+        .block3-glav-kv-big-button {
+            margin-top: 48px;
+            max-width: 354px;
+            height: 47px;
+            padding: 0 20px;
+            border-radius: var(--border-radius-lg);
+            background-color: var(--color-white);
+            border: 1px solid var(--color-green-primary);
+            font-size: var(--font-size-small);
+            font-weight: 600;
+            color: var(--color-green-primary);
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            z-index: 3;
+        }
+
+        .block3-glav-kv-big-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .block3-glav-kv-message:nth-of-type(2) {
+            top: 213px;
+            left: 104px;
+        }
+
+        .block3-glav-kv-message:nth-of-type(2).animate {
+            animation: showMessage 1s ease-in-out 5s forwards;
+        }
+        .block3-glav-cards .block3-glav-kv-img {
+            position: relative;
+            bottom: auto;
+            margin-top: auto;
+            margin-bottom: -5px;
+        }
+
+        .block3-glav-cards .block3-glav-kv-img-1 {
+            align-self: flex-end;
+            margin-right: -25px;
+            margin-bottom: -18px;
+        }
+
+        .block3-glav-cards .block3-glav-kv-img-2 {
+            align-self: center;
+            transform: none;
+        }
+
+        .block3-glav-cards .block3-glav-kv-img-3 {
+            align-self: flex-start;
+        }
+
+        .block3-glav-cards .block3-glav-kv-img-4 {
+            align-self: stretch;
+            transform: none;
+            width: calc(100% + 43px);
+            max-width: none;
+            margin-left: -20px;
+            margin-right: -23px;
+            display: block;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+        .block3-glav-cards .block3-glav-kv-img-container {
+            position: relative;
+            display: inline-block;
+            margin-top: auto;
+            align-self: center;
+        }
+        .block3-glav-cards .block3-glav-kv-img-container .block3-glav-kv-dots {
+            position: absolute;
+            top: 80px;
+            left: 84.71px;
+        }
+        .block3-glav-cards .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3) {
+            position: absolute;
+            top: 15px;
+            left: 0;
+        }
+        .block3-glav-cards .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4) {
+            position: absolute;
+            top: 78px;
+            right: 0;
+            left: auto;
+        }
+        .block3-glav-cards .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3).animate {
+            animation: showMessage 1s ease-in-out 3s forwards !important;
+        }
+
+        .block3-glav-cards .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4).animate {
+            animation: showMessage 1s ease-in-out 5s forwards !important;
+        }
+        .block3-glav-cards .block3-glav-kv-img-container .block3-glav-kv-img-2 {
+            position: relative;
+            margin-top: 0;
+        }
+
+        .block3-glav-cards > .block3-glav-kv-big {
+            max-width: none;
+            min-height: 395px;
+            height: auto;
+        }
+
+        @keyframes showMessage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes showDots {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes hideDots {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        @keyframes typingDot {
+            0%, 60%, 100% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .block3-glav-adaptive {
+            display: none;
+        }
+
+        @media (max-width: 1069px) and (min-width: 1000px) {
+            .block3-glav-kv-big-text {
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .block3-glav {
+                padding: 60px 30px;
+            }
+
+            .block3-glav-h1 {
+                font-size: 27px;
+                max-width: 411px;
+            }
+
+            .block3-glav-cards {
+                display: none;
+            }
+
+            .block3-glav-adaptive {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 30px;
+                max-width: none;
+            }
+
+            .block3-glav-cards-row-1,
+            .block3-glav-cards-row-2 {
+                display: flex;
+                gap: 20px;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) {
+                max-width: none;
+                flex: 1;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv {
+                height: 245px;
+                max-width: none;
+                padding: 0 12px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-h3 {
+                font-size: var(--font-size-text);
+                font-weight: 600;
+                margin-top: 18px;
+                margin-bottom: 10px;
+                max-width: 221px;
+            }
+
+            .block3-glav-cards-row-2 .block3-glav-kv:nth-child(1) .block3-glav-kv-h3{
+                max-width: none;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(1) .block3-glav-kv-text {
+                max-width: 201px;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-text {
+                max-width: none;
+            }
+
+            .block3-glav-cards-row-2 .block3-glav-kv:nth-child(1) .block3-glav-kv-text {
+                max-width: none;
+            }
+
+            .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-text {
+                max-width: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-1 {
+                content: url('/image/block3-glav/kv-img-1.svg');
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-2 {
+                content: url('/image/block3-glav/kv-img-21.webp');
+            }
+            
+
+            .block3-glav-adaptive .block3-glav-kv-img-4 {
+                display: none;
+            }
+
+
+            .block3-glav-adaptive .block3-glav-kv-big-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv:nth-child(1):hover .block3-glav-kv-img-1 {
+                content: url('/image/block3-glav/kv-img-1-hover.svg');
+            }
+
+            .block3-glav-adaptive .block3-glav-kv:nth-child(1) .block3-glav-kv-img-1 {
+                transform: translate(15px, -15px);
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big {
+                width: 100%;
+                height: 244px;
+                padding: var(--padding-small) 12px;
+                max-width: none;
+                gap: 0;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-left {
+                margin: -15px -12px -15px -12px;
+                padding: var(--padding-small) 12px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-right {
+                margin: -15px -12px -15px 0;
+                position: relative;
+                overflow: hidden;
+                min-height: 0;
+                align-self: stretch;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-h3 {
+                font-size: 16px;
+                margin-bottom: 15px;
+                max-width: 575px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-text {
+                max-width: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-button {
+                margin-top: 10px;
+                max-width: 220px;
+                height: 30px;
+                font-size: 9px;
+                text-align: center;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img {
+                position: static;
+                bottom: auto;
+                left: auto;
+                right: auto;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(1) .block3-glav-kv-img-1 {
+                align-self: flex-end;
+                margin-top: -15px;
+                margin-right: -30px;
+                width: 150px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 20px;
+                overflow: visible;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-img-container {
+                flex-shrink: 0;
+                width: 215px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(1) .block3-glav-kv-img-3 {
+                align-self: flex-end;
+                width: 200px;
+                margin-top: -18px;
+                margin-right: -90px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-img-4 {
+                display: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-dots {
+                position: absolute;
+                top: 110px;
+                left: 30%;
+                transform: translateX(-50%);
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3) {
+                position: absolute;
+                top: 130px;
+                right: 0;
+                left: auto;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4) {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3).animate {
+                animation: showMessage 1s ease-in-out 5s forwards !important;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4).animate {
+                animation: showMessage 1s ease-in-out 3s forwards !important;
+            }
+
+            .block3-glav-kv-message.animate {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-img-2 {
+                position: relative;
+                width: auto;
+                height: 250px;
+                bottom: 6px;
+                left: 25px;
+            }
+
+            .block3-glav-kv-big-left::after {
+                display: none;
+            }
+
+            .block3-glav-kv-big-left::before{
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block3-glav {
+                padding: 80px 29px 80px 30px;
+            }
+
+            .block3-glav-h1 {
+                font-size: 27px;
+                margin-bottom: 30px;
+            }
+
+            .block3-glav-text {
+                font-size: var(--font-size-small);
+            }
+
+            .block3-glav-cards {
+                display: none;
+            }
+
+            .block3-glav-adaptive {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            .block3-glav-cards-row-1,
+            .block3-glav-cards-row-2 {
+                display: flex;
+                gap: 20px;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) {
+                max-width: 486px;
+                flex: 1;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv {
+                height: 245px;
+                padding: 0 12px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-h3 {
+                font-size: var(--font-size-text);
+                font-weight: 600;
+                margin-top: 18px;
+                margin-bottom: 10px;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(1) .block3-glav-kv-text {
+                max-width: 201px;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-text {
+                max-width: 210px;
+            }
+
+            .block3-glav-cards-row-2 .block3-glav-kv:nth-child(1) .block3-glav-kv-text {
+                max-width: 315px;
+            }
+
+            .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-text {
+                max-width: 358px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-1 {
+                content: url('/image/block3-glav/kv-img-1.svg');
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-4 {
+                display: none;
+            }
+
+
+            .block3-glav-adaptive .block3-glav-kv:nth-child(1) .block3-glav-kv-img-1 {
+                transform: translate(15px, -15px);
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big {
+                width: 100%;
+                height: 263px;
+                padding: var(--padding-small) 12px;
+                gap: 0;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-left {
+                flex: 1 1 0;
+                margin: -15px -70px -15px -12px;
+                padding: var(--padding-small) 12px;
+                padding-right: 82px;
+                z-index: 3;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-right {
+                flex: 1 1 0;
+                margin: -15px -12px -15px 0;
+                position: relative;
+                overflow: hidden;
+                min-height: 0;
+                align-self: stretch;
+                z-index: 4;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-img {
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                position: absolute;
+                top: 0;
+                left: 70px;
+                display: block;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-h3 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                max-width: 575px;
+            }
+
+
+            .block3-glav-adaptive .block3-glav-kv-big-button {
+                margin-top: 10px;
+                height: 30px;
+                font-size: 9px;
+                text-align: center;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img {
+                position: static;
+                bottom: auto;
+                left: auto;
+                right: auto;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(1) .block3-glav-kv-img-1 {
+                align-self: flex-end;
+                margin-top: -15px;
+                margin-right: -30px;
+                width: 150px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 20px;
+                overflow: visible;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-img-container {
+                flex-shrink: 0;
+                width: 215px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(1) .block3-glav-kv-img-3 {
+                align-self: flex-end;
+                width: 200px;
+                margin-top: -18px;
+                margin-right: -90px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-img-4 {
+                display: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-dots {
+                position: absolute;
+                top: 110px;
+                left: 30%;
+                transform: translateX(-50%);
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3) {
+                position: absolute;
+                top: 130px;
+                right: 0;
+                left: auto;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4) {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3).animate {
+                animation: showMessage 1s ease-in-out 5s forwards !important;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4).animate {
+                animation: showMessage 1s ease-in-out 3s forwards !important;
+            }
+
+            .block3-glav-kv-message.animate {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-img-2 {
+                position: relative;
+                width: auto;
+                height: 250px;
+                bottom: 6px;
+                left: 25px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block3-glav{
+                padding: 60px 18px 60px 18px;
+            }
+
+            .block3-glav-adaptive {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .block3-glav-cards-row-1,
+            .block3-glav-cards-row-2 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv {
+                width: 100%;
+                height: auto;
+                padding: 0 17px;
+                min-height: auto;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-top: 26px;
+                max-width: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-text {
+                font-size: 15px;
+                max-width: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-content {
+                order: 1;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-img-container {
+                order: 2;
+                width: 300px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-1 {
+                content: url('/image/block3-glav/kv-img-1.svg');
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-3 {
+                content: url('/image/block3-glav/kv-img-3.svg');
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-4 {
+                display: block;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-img {
+                display: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-right {
+                display: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big {
+                height: auto;
+                width: 100%;
+                padding: 0 17px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-left {
+                margin: 0 -17px;
+                padding: 26px 17px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-left::after {
+                display: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-h3 {
+                font-size: 18px;
+                font-weight: 700;
+                max-width: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-text {
+                font-size: 15px;
+                max-width: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-big-button {
+                width: 100%;
+                max-width: none;
+                height: 42px;
+                font-size: 12px;
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv:nth-child(1) .block3-glav-kv-img-1 {
+                transform: translate(25px, 0);
+            }
+
+            .block3-glav-adaptive .block3-glav-kv:nth-child(1):hover .block3-glav-kv-img-1 {
+                content: url('/image/block3-glav/kv-img-1-hover.svg');
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-img-2 {
+                display: block;
+                margin: 0 auto;
+                bottom: 0px;
+                height: 300px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-dots {
+                top: 40px;
+                left: 30%;
+                transform: translateX(-50%);
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(1) .block3-glav-kv-img-1{
+                position: relative;
+                bottom: -35px;
+                right: 40px;
+                width: 250px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(3) {
+                top: 100px;
+                right: 5px;
+                left: auto;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) {
+                overflow: visible;
+                position: relative;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-h3,
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-text {
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(2) .block3-glav-kv-img-4 {
+                width: 100%;
+                max-width: none;
+                margin-left: 0;
+                margin-right: 0;
+                position: relative;
+                left: 0;
+                right: 0;
+                transform: none;
+                object-fit: cover;
+                object-position: center bottom;
+                display: block;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .block3-glav-adaptive .block3-glav-kv-img-container .block3-glav-kv-message:nth-child(4) {
+                top: 35px;
+                left: 20px;
+                transform: none;
+            }
+
+            .block3-glav-adaptive .block3-glav-cards-row-2 .block3-glav-kv:nth-child(1) .block3-glav-kv-img-3 {
+                align-self: flex-end;
+                width: 280px;
+                margin-top: 15px;
+                margin-right: 10px;
+            }
+
+            
+        }
+
+        @media (max-width: 480px) {
+            .block3-glav-h1{
+                font-size: 30px;
+            }
+
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(1) .block3-glav-kv-text{
+                max-width: none;
+            }
+        
+            .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2) .block3-glav-kv-text{
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block3-glav-adaptive .block3-glav-kv-text,
+            .block3-glav-adaptive .block3-glav-kv-big-text {
+                font-size: 14px;
+            }
+        }
+
+        /* ========== BLOCK4-GLAV: Какие грузы ========== */
+        .block4-glav {
+            background-color: var(--color-green-dark);
+            padding: var(--section-padding);
+        }
+
+        .block4-glav-h1 {
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-white);
+        }
+
+        .block4-glav-h2 {
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: #EEEFF1;
+            margin: 25px 0 65px;
+        }
+
+        .block4-glav-cards {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block4-glav-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 4vw 6vw;
+        }
+
+        .block4-glav-kv {
+            width: 100%;
+            height: 100%;
+        }
+
+        .block4-glav-kv-icon {
+            width: 64px;
+            height: 64px;
+        }
+
+        .block4-glav-kv-title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-white);
+            margin-top: 30px;
+        }
+
+        .block4-glav-kv-text {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: #EEEFF1;
+            margin-top: 10px;
+            line-height: var(--line-height);
+        }
+
+        .block4-glav-text-h2 {
+            font-size: var(--font-size-h2);
+            font-weight: 700;
+            color: var(--color-white);
+            display: flex;
+            align-items: center;
+            margin-top: 65px;
+        }
+
+        @media (max-width: 1000px) {
+            .block4-glav {
+                padding: var(--padding-tablet);
+            }
+
+            .block4-glav-h1 {
+                font-size: 30px;
+            }
+
+            .block4-glav-h2 {
+                margin: 20px 0 30px;
+                font-size: var(--font-size-text);
+                max-width: 720px;
+            }
+
+            .block4-glav-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+                gap: 30px;
+            }
+
+            .block4-glav-text-h2 {
+                font-size: var(--font-size-text);
+                margin-top: 50px;
+            }
+
+            .block4-glav-kv-title{
+                font-weight: 700;
+                width: 99%;
+            }
+
+            .block4-glav-kv-text{
+                font-size: var(--font-size-h2);
+                margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block4-glav {
+                padding: var(--padding-mobile);
+            }
+
+            .block4-glav-h1 {
+                font-size: 30px;
+            }
+
+            .block4-glav-h2 {
+                font-size: 18px;
+                margin: 30px 0 31px;
+            }
+
+            .block4-glav-cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .block4-glav-kv-title {
+                margin-top: 15px;
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            .block4-glav-kv-text {
+                font-size: 18px;
+            }
+
+            .block4-glav-text-h2 {
+                font-size: 15px;
+                font-weight: 700;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block4-glav-kv-title{
+                font-weight: 700;
+            }
+
+            .block4-glav-text-h2{
+                font-size: 18px;
+            }
+        }
+
+        /* ========== BLOCK5-ALGO: Способы перевозки ========== */
+        .block5-algo {
+            background-color: var(--color-white);
+            padding: var(--section-padding);
+        }
+
+        .block5-algo__title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin-bottom: 50px;
+        }
+
+        .block5-algo__steps {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .block5-algo__step-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .block5-algo__icon {
+            width: 27px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .block5-algo__step-body {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .block5-algo__step-title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-dark);
+            line-height: 1.3;
+        }
+
+        .block5-algo__text {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+        }
+
+        .block5-algo__list-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .block5-algo__list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0;
+            padding-left: 27px;
+        }
+
+        .block5-algo__list-item::marker {
+            font-size: 10px;
+        }
+
+        .block5-algo__list-item {
+            position: relative;
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 0.8;
+        }
+
+        .block5-algo__list-item strong {
+            font-weight: 700;
+        }
+
+        .block5-algo__outro {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 1.4;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 1000px) {
+            .block5-algo__title {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+            .block5-algo__list {
+                gap: 5px;
+            }
+
+            .block5-algo__list-item {
+                line-height: 1.4;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block5-algo {
+                padding: var(--padding-tablet);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block5-algo {
+                padding: var(--padding-mobile);
+            }
+
+            .block5-algo__title {
+                margin-bottom: 30px;
+                text-align: left;
+            }
+
+            .block5-algo__steps {
+                gap: 24px;
+            }
+
+            .block5-algo__icon {
+                width: 22px;
+                height: 16px;
+            }
+
+            .block5-algo__text,
+            .block5-algo__list-item,
+            .block5-algo__outro {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block5-algo__step-header {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                column-gap: 10px;
+                row-gap: 15px;
+                align-items: center;
+            }
+
+            .block5-algo__icon {
+                grid-column: 1;
+                grid-row: 1;
+                margin-top: 0;
+                align-self: center;
+            }
+
+            .block5-algo__step-body {
+                display: contents;
+            }
+
+            .block5-algo__step-title {
+                grid-column: 2;
+                grid-row: 1;
+                font-size: var(--font-size-medium);
+                align-self: center;
+            }
+
+            .block5-algo__step-body > *:not(.block5-algo__step-title) {
+                grid-column: 2;
+            }
+
+            .block5-algo__text,
+            .block5-algo__list-item,
+            .block5-algo__outro {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block5-algo__text,
+            .block5-algo__list-item,
+            .block5-algo__outro {
+                font-size: 14px;
+            }
+        }
+
+        /* ========== BLOCK6-GLAV: Этапы работ ========== */
+        .block6-glav {
+            background-color: var(--color-gray-bg);
+            padding: var(--section-padding);
+        }
+
+        /* Контейнеры карточек */
+        .block6-glav-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+        }
+
+        .block6-glav-cards-row {
+            display: flex;
+            gap: 37px;
+        }
+
+        .block6-glav-cards-row-top {
+            justify-content: flex-end;
+            gap: 24px;
+        }
+
+        .block6-glav-cards-group {
+            display: flex;
+            gap: 37px;
+        }
+
+        .block6-glav-cards-row-bottom {
+            justify-content: flex-start;
+        }
+
+        /* Заголовок секции */
+        .block6-glav-cards-empty {
+            width: 389px;
+            display: flex;
+            align-items: center;
+        }
+
+        .block6-glav-cards-empty-h1 {
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            max-width: 389px;
+            line-height: 1.2;
+        }
+
+        .block6-glav-cards-empty-h1-green {
+            color: var(--color-green-primary);
+        }
+
+        /* Адаптивный текст для заголовка */
+        .block6-text-auto {
+            display: none;
+        }
+
+        .block6-text-sea {
+            display: inline;
+        }
+
+        /* Карточки этапов */
+        .block6-glav-kv {
+            width: 375px;
+            background-color: var(--color-white);
+            border: 1px solid var(--color-gray-icon);
+            border-radius: var(--border-radius-md);
+            transition: background-color 0.3s ease;
+        }
+
+        .block6-glav-kv:hover {
+            background-color: var(--color-blue-dark);
+        }
+
+        .block6-glav-kv-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Заголовки карточек */
+        .block6-glav-kv-h2 {
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-black);
+            margin-bottom: 15px;
+            padding: 0 26px;
+            transition: color 0.3s ease;
+        }
+
+        .block6-glav-kv:hover .block6-glav-kv-h2 {
+            color: var(--color-white);
+        }
+
+        .block6-glav-kv-h2-with-badge {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--padding-horizontal);
+        }
+
+        .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-h2 { margin-top: 50px; }
+
+        .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 { margin-top: 42px; }
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(1) .block6-glav-kv-h2 { margin-top: 56px; }
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 { margin-top: 50px; }
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(3) .block6-glav-kv-h2 { margin-top: 50px; }
+
+        /* Тексты карточек */
+        .block6-glav-kv-text {
+            font-size: var(--font-size-text);
+            color: var(--color-gray-subtitle);
+            line-height: 1.3;
+            padding: 0px 20px 0px 20px;
+            transition: color 0.3s ease;
+            margin: 0;
+        }
+
+        .block6-glav-kv:hover .block6-glav-kv-text {
+            color: var(--color-white);
+        }
+
+
+        .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-text { margin-bottom: 33px; }
+        .block6-glav-kv:nth-child(2) .block6-glav-kv-text { margin-bottom: 53px; }
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(1) .block6-glav-kv-text { margin-bottom: 85px; }
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(2) .block6-glav-kv-text { margin-bottom: 42px; }
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(3) .block6-glav-kv-text { margin-bottom: 50px; }
+
+        /* Бейджи с датами */
+        .block6-glav-kv-badge {
+            width: 102px;
+            height: 42px;
+            border: 1px solid var(--color-gray-icon);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-text);
+            color: var(--color-dark);
+            flex-shrink: 0;
+            background-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .block6-glav-kv:hover .block6-glav-kv-badge {
+            background-color: var(--color-white);
+            color: var(--color-dark);
+        }
+
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(2) .block6-glav-kv-badge {
+            width: 94px;
+        }
+
+        .block6-glav-cards-row-bottom .block6-glav-kv:nth-child(3) .block6-glav-kv-badge {
+            width: 90px;
+        }
+
+        /* Адаптивная версия */
+        .block6-glav-adaptive {
+            display: none;
+        }
+
+        @media (max-width: 1069px) and (min-width: 1000px) {
+            .block6-glav-cards-row {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .block6-glav {
+                padding: var(--padding-tablet);
+            }
+
+            .block6-glav-cards {
+                display: none;
+            }
+
+            .block6-glav::after {
+                content: '';
+                display: block;
+            }
+
+            .block6-glav-adaptive {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .block6-glav-adaptive-row-1 {
+                display: flex;
+                gap: 20px;
+            }
+
+            .block6-glav-adaptive-row-2 {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+            }
+
+            .block6-glav-adaptive-left,
+            .block6-glav-adaptive-right {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .block6-glav-adaptive-right {
+                max-width: 265px;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 {
+                padding-left: 7px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv {
+                width: auto !important;
+                height: auto !important;
+            }
+
+            .block6-glav-adaptive-row-1 .block6-glav-kv {
+                max-height: 180px !important;
+                max-width: 420px !important;
+            }
+
+            .block6-glav-adaptive-left .block6-glav-kv:nth-child(1) {
+                height: 100% !important;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-h2 {
+                font-size: var(--font-size-text);
+                margin-top: 30px;
+                padding: var(--padding-horizontal);
+                margin-bottom: 10px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-badge {
+                width: auto;
+                height: auto;
+                font-size: var(--font-size-mobile);
+                border-radius: 6px;
+                color: #2B2B2C;
+                font-weight: 300;
+                padding: 6px 6px 6px 6px;
+            }
+
+            .block6-glav-kv-text {
+                padding: 0px 20px 37px 20px;
+            }
+
+            .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-h2 { margin-top: 30px; }
+
+            .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 { margin-top: 30px; }
+
+            .block6-glav-kv-h2{
+                font-weight: var(--font-weight-semibold);
+            }
+
+            .block6-text-sea {
+                display: none;
+            }
+
+            .block6-text-auto {
+                display: inline;
+            }
+
+            .block6-glav-cards-empty-h1 {
+                font-size: var(--font-size-tablet-h1);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-text {
+                margin-bottom: 0;
+            }
+
+            .block6-glav-kv:nth-child(2) .block6-glav-kv-text {
+                margin-bottom: 0;
+            }
+
+            /* block6-glav-kv: margin-bottom только для 2-й карточки в block6-glav-adaptive-left */
+
+            .block6-glav-adaptive-left .block6-glav-kv:nth-child(2) .block6-glav-kv-text {
+                margin-bottom: 17px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block6-glav {
+                padding: var(--padding-mobile);
+            }
+
+            .block6-glav-cards {
+                display: none;
+            }
+
+            .block6-glav-adaptive {
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap-small);
+            }
+
+            .block6-glav-adaptive-row-1 {
+                flex-direction: column;
+                gap: var(--gap-small);
+            }
+
+            .block6-glav-adaptive-row-2 {
+                flex-direction: column;
+                gap: var(--gap-small);
+            }
+
+            .block6-glav-adaptive-left,
+            .block6-glav-adaptive-right {
+                max-width: none;
+                width: 100%;
+                gap: var(--gap-small);
+                display: contents;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .block6-glav-cards-empty-h1 {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+            .block6-glav-cards-empty-h1 {
+                margin-bottom: 10px;
+            }
+
+            .block6-text-sea {
+                display: inline;
+            }
+
+            .block6-text-auto {
+                display: none;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-h2 {
+                font-weight: 700;
+                font-size: var(--font-size-small);
+                margin-top: 15px;
+                padding: 0 15px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-h2-with-badge {
+                margin-top: 15px;
+                gap: 15px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-text {
+                font-size: var(--font-size-small);
+                padding: 0 15px 15px 15px;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(1) .block6-glav-kv-text {
+                margin-bottom: 0px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-badge {
+                font-weight: 300;
+                border-radius: var(--border-radius-sm);
+                padding: 4px 10px;
+            }
+
+            .block6-glav-kv-h2-with-badge {
+                justify-content: flex-start;
+            }
+
+            .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-h2 {
+                margin-top: 15PX;
+            }
+
+            .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 {
+                margin-top: 15PX;
+            }
+
+
+            .block6-glav-adaptive-row-2 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block6-glav-adaptive-left .block6-glav-kv:nth-child(1) {
+                order: 1;
+            }
+
+            .block6-glav-adaptive-left .block6-glav-kv:nth-child(2) {
+                order: 2;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(1) {
+                order: 3;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(2) {
+                order: 4;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(2) .block6-glav-kv-text{
+                margin-bottom: 0px;
+            }
+        }
+
+
+        @media (max-width: 450px) {
+
+            .block6-glav-cards-empty-h1 {
+                font-size: 30px;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(1) .block6-glav-kv-text {
+                margin-bottom: 0px;
+            }
+            
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(1) {
+                order: 2;
+            }
+
+            .block6-glav-adaptive-left .block6-glav-kv:nth-child(2) {
+                order: 3;
+            }
+
+
+            .block6-glav-adaptive .block6-glav-kv-text{
+                padding: 0 15px 30px 15px;
+            }
+
+            .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-h2{
+                margin-top: 30px;
+            }
+
+            .block6-glav-kv:nth-child(2) .block6-glav-kv-h2{
+                margin-top: 30px;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(2) .block6-glav-kv-badge{
+                margin: 0px;
+                margin-left: 15px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-h2{
+                margin-top: 30px;
+            }
+
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 {
+                padding-left: 15px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-h2,
+            .block6-glav-adaptive .block6-glav-kv-h2-with-badge,
+            .block6-glav-cards-group .block6-glav-kv:nth-child(1) .block6-glav-kv-h2,
+            .block6-glav-kv:nth-child(2) .block6-glav-kv-h2,
+            .block6-glav-adaptive-right .block6-glav-kv:nth-child(2) .block6-glav-kv-h2 {
+                margin-top: 0;
+                padding-top: 15px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-text {
+                padding: 0 15px 15px;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block6-glav-adaptive .block6-glav-kv-h2,
+            .block6-glav-adaptive .block6-glav-kv-text {
+                font-size: 14px;
+            }
+
+            .block6-glav-kv:nth-child(2) .block6-glav-kv-h2{
+                padding-right: 4px;
+            }
+
+            .block6-glav-adaptive .block6-glav-kv-badge {
+                font-size: 12px;
+            }
+        }
+
+        /* ========== BLOCK7-TASKS: Упаковка и маркировка ========== */
+
+        .block7-tasks {
+            background-color: var(--color-white);
+            padding: var(--section-padding);
+            overflow: visible;
+        }
+
+        .block7-tasks__title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .block7-tasks__intro {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-gray-text);
+            line-height: var(--line-height);
+            margin-bottom: 50px;
+            max-width: 100%;
+        }
+
+        .block7-tasks__points {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .block7-tasks__point {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .block7-tasks__num {
+            font-size: var(--font-size-h1);
+            font-weight: 700;
+            color: var(--color-green-primary);
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .block7-tasks__point-text {
+            font-size: var(--font-size-text);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+        }
+
+        .block7-tasks__outro {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text);
+            line-height: var(--line-height);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 1000px) {
+            .block7-tasks {
+                padding: var(--padding-tablet);
+            }
+
+            .block7-tasks__title {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+            .block7-tasks__intro,
+            .block7-tasks__outro{
+                color: var(--color-dark);
+                font-size: var(--font-size-text);
+            }
+
+            .block7-tasks__point-text {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block7-tasks {
+                padding: var(--padding-mobile);
+            }
+
+            .block7-tasks__title {
+                margin-bottom: 20px;
+                width: 90%;
+            }
+
+            .block7-tasks__intro {
+                margin-bottom: 30px;
+            }
+
+            .block7-tasks__points {
+                grid-template-columns: 1fr;
+            }
+
+            .block7-tasks__outro {
+                margin-top: 30px;
+            }
+
+            .block7-tasks__intro,
+            .block7-tasks__point-text,
+            .block7-tasks__outro {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block7-tasks__num {
+                font-size: 40px;
+            }
+        }
+
+        /* ========== BLOCK8-FLAGS: Красные флаги ========== */
+        .block8-flags__reveal {
+            opacity: 0;
+        }
+
+        .block8-flags__reveal.is-inview {
+            animation: block1-fade-up 0.7s ease forwards;
+        }
+
+        .block8-flags {
+            background-color: var(--color-green-light-bg);
+            padding: var(--section-padding);
+        }
+
+        .block8-flags__intro {
+            margin-bottom: 50px;
+        }
+
+        .block8-flags__title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin-bottom: 20px;
+        }
+
+        .block8-flags__desc {
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 1.55;
+        }
+
+        .block8-flags__grid {
+            display: grid;
+            grid-template-columns: 210px 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .block8-flags__image {
+            width: auto;
+            max-width: 210px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .block8-flags__tags {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .block8-flags__tag {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .block8-flags__tag-icon {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+        }
+
+        .block8-flags__tag-text {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 1.4;
+        }
+
+        .block8-flags__outro {
+            margin-top: 50px;
+        }
+
+        .block8-flags__outro-text {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 1.55;
+        }
+
+
+        @media (max-width: 1000px) {
+            .block8-flags__grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .block8-flags__intro {
+                margin-bottom: 0;
+            }
+
+            .block8-flags__title {
+                font-size: 30px;
+            }
+
+            .block8-flags__image {
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block8-flags {
+                padding: var(--padding-tablet);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block8-flags {
+                padding: var(--padding-mobile);
+            }
+
+            .block8-flags__intro {
+                margin-bottom: 30px;
+            }
+
+            .block8-flags__tags {
+                gap: 20px;
+            }
+
+            .block8-flags__tag-text,
+            .block8-flags__text,
+            .block8-flags__desc,
+            .block8-flags__outro-text {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block8-flags__image {
+                display: block;
+            }
+
+            .block8-flags__media {
+                display: flex;
+                justify-content: center;
+            }
+
+            .block8-flags__tag-text,
+            .block8-flags__text,
+            .block8-flags__desc,
+            .block8-flags__outro-text {
+                font-size: 15px;
+            }
+
+            .block8-flags__outro{
+                margin-top: 15px;
+            }
+
+            .block8-flags__outro-text:last-child {
+                margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block8-flags__tag-text,
+            .block8-flags__text,
+            .block8-flags__desc,
+            .block8-flags__outro-text {
+                font-size: 14px;
+            }
+        }
+
+        /* ========== BLOCK9-ALGO: Таможенное оформление ========== */
+        .block9-algo {
+            background-color: var(--color-white);
+            padding: var(--section-padding);
+        }
+
+        .block9-algo__title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin-bottom: 25px;
+        }
+        .block9-algo__intro {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: var(--line-height);
+            margin-bottom: 50px;
+        }
+
+
+        .block9-algo__steps {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .block9-algo__step-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .block9-algo__icon {
+            width: 27px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .block9-algo__step-body {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .block9-algo__step-title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-dark);
+            line-height: 1.3;
+        }
+
+        .block9-algo__text {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+        }
+
+        .block9-algo__list-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .block9-algo__list {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding-left: 27px;
+        }
+
+        .block9-algo__list-item::marker {
+            font-size: 10px;
+        }
+
+        .block9-algo__list-item {
+            position: relative;
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 1.4;
+        }
+
+        .block9-algo__list-item strong {
+            font-weight: 700;
+        }
+
+        .block9-algo__outro {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text-secondary);
+            line-height: 1.4;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 1000px) {
+            .block9-algo__title {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+            .block9-algo__intro{
+                margin-bottom: 40px;
+            }
+
+            .block9-algo__list {
+                gap: 5px;
+            }
+
+            .block9-algo__list-item {
+                line-height: 1.4;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block9-algo {
+                padding: var(--padding-tablet);
+            }
+
+            .block9-algo__step:last-child .block9-algo__step-body {
+                margin-bottom: 50px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block9-algo {
+                padding: var(--padding-mobile);
+            }
+
+            .block9-algo__title {
+                margin-bottom: 30px;
+                text-align: left;
+            }
+
+            .block9-algo__steps {
+                gap: 24px;
+            }
+
+            .block9-algo__icon {
+                width: 22px;
+                height: 16px;
+            }
+
+            .block9-algo__intro,
+            .block9-algo__text,
+            .block9-algo__list-item,
+            .block9-algo__outro {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block9-algo__step-header {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                column-gap: 10px;
+                row-gap: 15px;
+                align-items: center;
+            }
+
+            .block9-algo__icon {
+                grid-column: 1;
+                grid-row: 1;
+                margin-top: 0;
+                align-self: center;
+            }
+
+            .block9-algo__step-body {
+                display: contents;
+            }
+
+            .block9-algo__step-title {
+                grid-column: 2;
+                grid-row: 1;
+                font-size: var(--font-size-medium);
+                align-self: center;
+            }
+
+            .block9-algo__step-body > *:not(.block9-algo__step-title) {
+                grid-column: 2;
+            }
+
+            .block9-algo__intro,
+            .block9-algo__text,
+            .block9-algo__list-item,
+            .block9-algo__outro {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block9-algo__intro,
+            .block9-algo__text,
+            .block9-algo__list-item,
+            .block9-algo__outro {
+                font-size: 14px;
+            }
+        }
+
+        /* ========== BLOCK10-GLAV: FAQ ========== */
+        .block10-glav {
+            background-color: var(--color-gray-bg);
+            padding: var(--section-padding);
+        }
+
+        .block10-glav-title {
+            font-size: var(--font-size-h1);
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 50px;
+        }
+
+        .block10-glav-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block10-glav-question {
+            padding: 15px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: 1px solid #AAADB066;
+            border-radius: 10px;
+            background-color: white;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            height: 80px;
+            margin-bottom: 30px;
+        }
+
+        .block10-glav-question-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #555658;
+        }
+
+        .block10-glav-arrow {
+            width: 20px;
+            height: 13px;
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .block10-glav-answer-content {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #555658;
+        }
+
+        .block10-glav-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(0);
+            transition: max-height 0.7s ease-in-out,
+                padding 0.7s ease-in-out,
+                opacity 0.5s ease-in-out,
+                transform 0.5s ease-in-out,
+                margin-top 0.7s ease-in-out,
+                margin-bottom 0.7s ease-in-out;
+            border: 1px solid #AAADB066;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            background-color: transparent;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-top: -1px;
+            margin-bottom: 0;
+        }
+
+        .block10-glav-item.active .block10-glav-answer {
+            padding: 15px 15px;
+            max-height: 500px;
+            opacity: 1;
+            transform: translateY(0);
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+
+        .block10-glav-item.active .block10-glav-arrow {
+            transform: rotate(180deg);
+        }
+
+        .block10-glav-item {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .block10-glav-item.is-inview {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 1000px) {
+            .block10-glav-title {
+                font-size: var(--font-size-tablet-h1);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block10-glav {
+                padding: var(--padding-mobile);
+            }
+
+            .block10-glav-title {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+
+            .block10-glav-question {
+                height: auto;
+                min-height: 60px;
+                padding: 12px 15px;
+            }
+
+            .block10-glav-question-text,
+            .block10-glav-answer-content {
+                font-size: var(--font-size-small);
+            }
+
+            .block10-glav-answer-content {
+                padding-top: 10px;
+            }
+
+            .block10-glav-arrow {
+                width: 13.5px;
+                height: 9px;
+            }
+        }
+
+        @media (max-width: 394px) {
+            .block10-glav-title {
+                font-size: 30px;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .block10-glav-question {
+                margin-bottom: 15px;
+            }
+
+            .block10-glav-item.active .block10-glav-answer {
+                margin-bottom: 15px;
+            }
+
+            .block10-glav-container {
+                gap: 0;
+            }
+        }
+
+        /* ========== BLOCK11-GLAV: Форма расчёта ========== */
+        .block11-glav {
+            background-color: var(--color-gray-bg);
+            padding: var(--section-padding);
+        }
+
+        .block11-glav-content {
+            display: flex;
+            gap: 31px;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .block11-glav-left {
+            max-width: 549px;
+        }
+
+        .block11-glav-right {
+            margin-top: 21px;
+            min-width: 577px;
+        }
+
+        .block11-glav-h1 {
+            max-width: 549px;
+            font-size: 40px;
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin-bottom: 25px;
+        }
+
+        .block11-glav-text {
+            max-width: 510px;
+            font-size: var(--font-size-text);
+            color: var(--color-dark);
+            line-height: 1.2;
+        }
+
+        .block11-glav-h1-mobile,
+        .block11-glav-text-mobile {
+            display: none;
+        }
+
+        .block11-glav-form {
+            max-width: 496px;
+            margin-top: 30px;
+        }
+
+        .block11-glav-form-label {
+            font-size: var(--font-size-text);
+            line-height: 1.08;
+            color: var(--color-black);
+            margin: 30px 0 10px;
+            display: block;
+        }
+
+        .block11-glav-form-input {
+            width: 100%;
+            height: 48px;
+            padding: 0 15px;
+            font-size: var(--font-size-text);
+            color: var(--color-black);
+            background-color: var(--color-white);
+            border: 1px solid var(--color-gray-icon);
+            border-radius: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .block11-glav-form-textarea {
+            width: 100%;
+            height: 48px;
+            padding: var(--padding-small);
+            font-size: var(--font-size-text);
+            color: var(--color-black);
+            background-color: var(--color-white);
+            border: 1px solid var(--color-gray-icon);
+            border-radius: 0;
+            outline: none;
+            resize: none;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .block11-glav-form-label .required {
+            color: red;
+        }
+
+        .block11-glav-checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .block11-glav-checkbox {
+            width: 28px;
+            height: 12px;
+            background-color: rgba(76, 197, 116, 1);
+            border-radius: 30px;
+            position: relative;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .block11-glav-checkbox::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-white);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .block11-glav-checkbox:checked::after {
+            transform: translateX(-16px);
+        }
+
+        .block11-glav-checkbox-text {
+            font-size: 11px;
+            font-weight: 300;
+            color: var(--color-dark);
+            line-height: var(--line-height);
+        }
+
+        .block11-glav-checkbox-text a {
+            text-decoration: underline;
+            color: var(--color-dark);
+        }
+
+        .block11-glav-button {
+            max-width: 496px;
+            width: 100%;
+            height: 51px;
+            background-color: var(--color-green-button-light);
+            border-radius: var(--border-radius-btn);
+            border: none;
+            font-size: var(--font-size-text);
+            font-weight: 700;
+            color: var(--color-white);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .block11-glav-button:hover {
+            background-color: var(--color-green-primary);
+        }
+
+        .block11-glav-img {
+            width: 100%;
+            height: 100%;
+            max-height: 610px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 1069px) and (min-width: 1000px) {
+            .block11-glav {
+                padding: 80px 20px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .block11-glav {
+                padding: var(--padding-tablet);
+            }
+
+            .block11-glav-h1-mobile {
+                display: block;
+                font-size: var(--font-size-h1);
+                font-weight: var(--font-weight-semibold);
+                color: var(--color-dark);
+                margin-bottom: 25px;
+                line-height: 1.2;
+                width: 100%;
+            }
+
+            .block11-glav-text-mobile {
+                display: block;
+                font-size: var(--font-size-text);
+                color: var(--color-dark);
+                line-height: 1.2;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+
+            .block11-glav-left .block11-glav-h1,
+            .block11-glav-left .block11-glav-text {
+                display: none;
+            }
+
+            .block11-glav-content {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .block11-glav-right {
+                order: 1;
+                margin-top: 0;
+                width: 100%;
+                min-width: 0;
+                align-self: stretch;
+            }
+
+            .block11-glav-left {
+                order: 2;
+                max-width: none;
+                width: 100%;
+            }
+
+            .block11-glav-img {
+                width: 100%;
+                height: 716px;
+                border-radius: 12px;
+                object-fit: cover;
+                object-position: top;
+                display: block;
+            }
+            
+            .block11-glav-form,
+            .block11-glav-button{
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block11-glav {
+                padding: var(--padding-mobile);
+            }
+
+            .block11-glav-h1-mobile {
+                font-size: 27px;
+                margin-bottom: 10px;
+            }
+
+            .block11-glav-text-mobile {
+                font-size: var(--font-size-small);
+                margin-bottom: 0;
+            }
+
+            .block11-glav-form-label {
+                font-size: var(--font-size-small);
+            }
+
+            .block11-glav-button {
+                margin-top: 46px;
+                height: 54px;
+                text-align: center;
+            }
+
+            .block11-glav-right {
+                display: none;
+            }
+        }
+
+        /* ========== BLOCK12-GLAV: Дополнительные статьи ========== */
+        .block12-glav {
+            background-color: var(--color-green-dark);
+            padding: var(--section-padding);
+        }
+
+        .block12-glav-h1 {
+            font-family: var(--font-family-primary);
+            font-size: 40px;
+            font-weight: var(--font-weight-semibold);
+            color: #FFFFFF;
+            margin-bottom: 50px;
+        }
+
+        .block12-glav-cards {
+            display: flex;
+            gap: 30px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            container-type: inline-size;
+            container-name: block12-cards;
+        }
+
+        .block12-glav-cards-wrapper {
+            display: flex;
+            gap: 30px;
+            transition: transform 0.6s ease-in-out;
+            will-change: transform;
+        }
+
+        .block12-glav-card {
+            flex: 0 0 calc((100cqi - 60px) / 3);
+            max-width: calc((100cqi - 60px) / 3);
+            min-width: calc((100cqi - 60px) / 3);
+            width: calc((100cqi - 60px) / 3);
+            min-height: 132px;
+            height: auto;
+            border: 2px solid #FFFFFF;
+            border-radius: 10px;
+            background-color: transparent;
+            padding: 25px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .block12-glav-card-h2 {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h2);
+            font-weight: 700;
+            color: #FFFFFF;
+            margin: 0;
+            line-height: 1.2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .block12-glav-card-text {
+            margin-top: 8px;
+            font-size: var(--font-size-small);
+            color: #FFFFFF;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .block12-glav-card:hover {
+            background-color: var(--color-white);
+            border-color: var(--color-green-button);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .block12-glav-card:hover .block12-glav-card-h2,
+        .block12-glav-card:hover .block12-glav-card-text {
+            color: var(--color-green-button);
+            transition: color 0.3s ease;
+        }
+
+        .block12-glav-pagination {
+            display: flex;
+            justify-content: flex-end;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        .block12-glav-pagination-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .block12-glav-pagination-dot:not(.active) {
+            background-color: #DBDEE3;
+            opacity: 1;
+        }
+
+        .block12-glav-pagination-dot:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 1000px) {
+            .block12-glav-h1 {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+            .block12-glav-cards-wrapper {
+                gap: 20px;
+            }
+
+            .block12-glav-card {
+                flex: 0 0 calc((100cqi - 20px) / 2) !important;
+                max-width: calc((100cqi - 20px) / 2) !important;
+                min-width: calc((100cqi - 20px) / 2) !important;
+                width: calc((100cqi - 20px) / 2) !important;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block12-glav {
+                padding: var(--padding-tablet);
+            }
+
+            .block12-glav-cards-wrapper {
+                gap: 20px !important;
+            }
+
+            .block12-glav-card {
+                flex: 0 0 calc((100cqi - 20px) / 2) !important;
+                max-width: calc((100cqi - 20px) / 2) !important;
+                min-width: calc((100cqi - 20px) / 2) !important;
+                width: calc((100cqi - 20px) / 2) !important;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block12-glav {
+                display: block;
+                padding: var(--padding-mobile);
+            }
+
+            .block12-glav-h1 {
+                font-size: 30px;
+                margin-bottom: 30px;
+                text-align: left;
+            }
+
+            .block12-glav-cards {
+                gap: 20px;
+                overflow: visible;
+                height: auto;
+            }
+
+            .block12-glav-cards-wrapper {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 20px;
+                transform: none !important;
+                will-change: auto;
+                transition: none;
+                min-width: 0;
+                max-width: 100%;
+            }
+
+            .block12-glav-card {
+                flex: 0 0 auto !important;
+                max-width: 100% !important;
+                min-width: 100% !important;
+                width: 100% !important;
+                height: auto;
+                min-height: 120px;
+                padding: 20px;
+            }
+
+            .block12-glav-pagination {
+                display: none !important;
+            }
+
+            .block12-glav-card-h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 361px) {
+
+            .block1-glav,
+            .block2-glav,
+            .block3-glav,
+            .block4-glav,
+            .block5-algo,
+            .block6-glav,
+            .block7-tasks,
+            .block8-flags,
+            .block9-algo,
+            .block10-glav,
+            .block11-glav,
+            .block12-glav {
+                padding: var(--padding-mobile-l);
+            }
+        }
+</style>
+</head>
+<body>
+    <main>
+        <!-- BLOCK1-GLAV: Hero секция -->
+        <section class="block1-glav">
+            <div class="section-container">
+                <div class="block1-glav-left-kv">
+                    <div class="block1-glav-left-kv-top">
+                        <div class="block1-glav-left-kv-services-text reveal">НАШИ УСЛУГИ</div>
+                        <div class="block1-glav-left-kv-services-line reveal"></div>
+                        <h1 class="block1-glav-left-kv-h reveal">Доставка опасных грузов из Китая в&nbsp;Россию</h1>
+                    </div>
+                    <div class="block1-glav-list">
+                        <div class="block1-glav-list-item reveal">
+                            <img src="image/block1-glav/Danger.svg" alt="" class="block1-glav-list-icon" aria-hidden="true">
+                            <span>Работаем со всеми 9 классами опасности</span>
+                        </div>
+                        <div class="block1-glav-list-item reveal">
+                            <img src="image/block1-glav/paper.svg" alt="" class="block1-glav-list-icon" aria-hidden="true">
+                            <span>Полное таможенное сопровождение поставки</span>
+                        </div>
+                        <div class="block1-glav-list-item reveal">
+                            <img src="image/block1-glav/Boxes.svg" alt="" class="block1-glav-list-icon" aria-hidden="true">
+                            <span>Бесплатное хранение опасных грузов на складе</span>
+                        </div>
+                        <button class="block1-glav-list-button reveal" type="button">получить кп</button>
+                    </div>
+                </div>
+                <div class="block1-glav-right-kv">
+                    <img src="image/block1-glav/back.png" alt="Команда Sibtransasia" class="block1-glav-right-kv-img reveal">
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK2-GLAV: О нас -->
+        <section class="block2-glav">
+            <div class="section-container">
+                <h2 class="block2-glav-h1 reveal">О нас</h2>
+                <p class="block2-glav-text reveal">Компания STA СибирьТрансАзия организует перевозку опасных грузов из Китая в Россию морским, железнодорожным, автомобильным и авиационным транспортом. Работаем со всеми девятью классами опасности: от газов, химических веществ и легковоспламеняющихся жидкостей до литиевых аккумуляторов, взрывчатых и радиоактивных материалов.</p>
+                <p class="block2-glav-text reveal">До отправки проверяем характеристики продукции и сопроводительные документы, определяем требования к упаковке и маркировке, подбираем маршрут и согласовываем перевозку с участниками логистической цепочки. Забираем товар у поставщика в Китае, проводим экспортное и таможенное оформление, организуем международную транспортировку и доставку получателю в России.</p>
+                <p class="block2-glav-text reveal"><strong>Получите точный расчёт перевозки.</strong> Направьте нам наименование груза, MSDS или паспорт безопасности, массу, объём, пункт отправления и город доставки.</p>
+            </div>
+        </section>
+
+        <!-- BLOCK3-GLAV: Преимущества -->
+        <section class="block3-glav">
+            <div class="section-container">
+                <h2 class="block3-glav-h1">Почему выбирают нас для доставки из Китая?</h2>
+                <div class="block3-glav-cards">
+                    <div class="block3-glav-kv">
+                        <h3 class="block3-glav-kv-h3">Собственный таможенно-логистический терминал</h3>
+                        <p class="block3-glav-kv-text">Бесплатно разместим груз на СВХ или таможенном складе. Работаем с грузами всех девяти классов опасности.</p>
+                        <img src="image/block3-glav/kv-img-1.svg" alt="Иконка" class="block3-glav-kv-img block3-glav-kv-img-1">
+                    </div>
+                    <div class="block3-glav-kv block3-glav-kv-with-animation">
+                        <h3 class="block3-glav-kv-h3">Комплексный сервис</h3>
+                        <p class="block3-glav-kv-text">Отвечаем 24/7 на ваши вопросы. Проверяем документы до передачи груза перевозчику и сопровождаем таможенное оформление.</p>
+                        <div class="block3-glav-kv-img-container">
+                            <img src="image/block3-glav/kv-img-2.webp" alt="Телефон" class="block3-glav-kv-img block3-glav-kv-img-2">
+                            <div class="block3-glav-kv-dots">
+                                <div class="block3-glav-kv-dot"></div>
+                                <div class="block3-glav-kv-dot"></div>
+                                <div class="block3-glav-kv-dot"></div>
+                            </div>
+                            <div class="block3-glav-kv-message">Нужна доставка оборудования<br>10 тонн из Урумчи в Павлодар</div>
+                            <div class="block3-glav-kv-message">Здравствуйте! Уже считаем<br>стоимость логистики и платежей.</div>
+                        </div>
+                    </div>
+                    <div class="block3-glav-kv">
+                        <h3 class="block3-glav-kv-h3">Финансовая ответственность за груз</h3>
+                        <p class="block3-glav-kv-text">Мы берем на себя 100% материальную ответственность за сохранность товаров. Предоставляем расчёт с учётом характеристик конкретной партии.</p>
+                        <img src="image/block3-glav/kv-img-3.svg" alt="Коробка" class="block3-glav-kv-img block3-glav-kv-img-3">
+                    </div>
+                    <div class="block3-glav-kv">
+                        <h3 class="block3-glav-kv-h3">18 лет опыта на рынке ВЭД</h3>
+                        <p class="block3-glav-kv-text">Глубокое понимание специфики перевозки и оформления товаров из Китая в Россию и страны СНГ.</p>
+                        <img src="image/block3-glav/kv-img-4.png" alt="Часы" class="block3-glav-kv-img block3-glav-kv-img-4">
+                    </div>
+                    <div class="block3-glav-kv-big">
+                        <div class="block3-glav-kv-big-left">
+                            <h3 class="block3-glav-kv-big-h3">Экспертиза в логистике</h3>
+                            <p class="block3-glav-kv-big-text">Организуем доставку опасных грузов из Китая&nbsp;в Россию. Предлагаем морские, железнодорожные, автомобильные и авиационные маршруты. Помогаем с упаковкой и маркировкой отправления. Комбинируем несколько видов транспорта в&nbsp;одном маршруте. Доставляем грузы получателям в разных регионах России.</p>
+                            <button class="block3-glav-kv-big-button my-custom-popup" href="/site/get-feedback-new">Получить бесплатную консультацию</button>
+                        </div>
+                        <div class="block3-glav-kv-big-right">
+                            <img src="image/block3-glav/gv-kv3-img.jpg" alt="Минимум манипуляций с грузом" class="block3-glav-kv-big-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block3-glav-adaptive">
+                    <div class="block3-glav-cards-row-1">
+                        <div class="block3-glav-kv">
+                            <h3 class="block3-glav-kv-h3">Собственный таможенно-логистический терминал</h3>
+                            <p class="block3-glav-kv-text">Бесплатно разместим груз на СВХ или таможенном складе. Работаем с грузами всех девяти классов опасности. </p>
+                            <img src="image/block3-glav/kv-img-1.svg" alt="Иконка" class="block3-glav-kv-img block3-glav-kv-img-1">
+                        </div>
+                        <div class="block3-glav-kv block3-glav-kv-with-animation">
+                            <div class="block3-glav-kv-content">
+                                <h3 class="block3-glav-kv-h3">Комплексный сервис</h3>
+                                <p class="block3-glav-kv-text">Отвечаем 24/7 на ваши вопросы. Проверяем документы до передачи груза перевозчику и сопровождаем таможенное оформление.</p>
+                            </div>
+                            <div class="block3-glav-kv-img-container">
+                                <img src="image/block3-glav/kv-img-2.webp" alt="Телефон" class="block3-glav-kv-img block3-glav-kv-img-2">
+                                <div class="block3-glav-kv-dots">
+                                    <div class="block3-glav-kv-dot"></div>
+                                    <div class="block3-glav-kv-dot"></div>
+                                    <div class="block3-glav-kv-dot"></div>
+                                </div>
+                                <div class="block3-glav-kv-message">Нужна доставка оборудования<br>10 тонн из Урумчи в Павлодар</div>
+                                <div class="block3-glav-kv-message">Здравствуйте! Уже считаем<br>стоимость логистики и платежей.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block3-glav-cards-row-2">
+                        <div class="block3-glav-kv">
+                            <h3 class="block3-glav-kv-h3">Финансовая ответственность за груз</h3>
+                            <p class="block3-glav-kv-text">Мы берем на себя 100% материальную ответственность за сохранность товаров. Предоставляем расчёт с учётом характеристик конкретной партии.</p>
+                            <img src="image/block3-glav/kv-img-3.svg" alt="Коробка" class="block3-glav-kv-img block3-glav-kv-img-3">
+                        </div>
+                        <div class="block3-glav-kv">
+                            <h3 class="block3-glav-kv-h3">18 лет опыта на рынке ВЭД</h3>
+                            <p class="block3-glav-kv-text">Глубокое понимание специфики перевозки и&nbsp;оформления товаров из Китая в Россию и страны СНГ.</p>
+                            <img src="image/block3-glav/kv-img-4.svg" alt="Часы" class="block3-glav-kv-img block3-glav-kv-img-4">
+                        </div>
+                    </div>
+                    <div class="block3-glav-kv-big">
+                        <div class="block3-glav-kv-big-left">
+                            <h3 class="block3-glav-kv-big-h3">Экспертиза по Китаю</h3>
+                            <p class="block3-glav-kv-big-text">Организуем доставку опасных грузов из Китая в Россию. Предлагаем морские, железнодорожные, автомобильные и авиационные маршруты. Помогаем с упаковкой и маркировкой отправления. Комбинируем несколько видов транспорта в одном маршруте. </p>
+                            <button class="block3-glav-kv-big-button my-custom-popup" href="/site/get-feedback-new">Получить бесплатную консультацию</button>
+                        </div>
+                        <div class="block3-glav-kv-big-right">
+                            <img src="image/block3-glav/kv3-big-img.png" alt="Минимум манипуляций с грузом" class="block3-glav-kv-big-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK4-GLAV: Какие товары и поставщиков ищем -->
+        <section class="block4-glav">
+            <div class="section-container">
+                <h2 class="block4-glav-h1 reveal">Какие опасные грузы мы перевозим</h2>
+                <p class="block4-glav-h2 reveal">Организуем международные перевозки опасных грузов всех классов по классификации ООН:</p>
+
+                <div class="block4-glav-cards">
+                    <div class="block4-glav-cards-grid">
+                        <div class="block4-glav-kv reveal">
+                            <img src="image/block4-glav/ico1.svg" alt="" class="block4-glav-kv-icon" aria-hidden="true">
+                            <p class="block4-glav-kv-title">Взрывчатые вещества и изделия</p>
+                            <p class="block4-glav-kv-text">Цилиндрический литий-ионный аккумулятор, батарейки.</p>
+                        </div>
+                        <div class="block4-glav-kv reveal">
+                            <img src="image/block4-glav/ico2.svg" alt="" class="block4-glav-kv-icon" aria-hidden="true">
+                            <p class="block4-glav-kv-title">Газы</p>
+                            <p class="block4-glav-kv-text">Сжатые, сжиженные, растворённые под давлением, горючие и&nbsp;токсичные газы.</p>
+                        </div>
+                        <div class="block4-glav-kv reveal">
+                            <img src="image/block4-glav/ico3.svg" alt="" class="block4-glav-kv-icon" aria-hidden="true">
+                            <p class="block4-glav-kv-title">Легковоспламеняющиеся жидкости</p>
+                            <p class="block4-glav-kv-text">Растворители, лакокрасочная продукция, топливо и&nbsp;химические составы.</p>
+                        </div>
+                        <div class="block4-glav-kv reveal">
+                            <img src="image/block4-glav/ico4.svg" alt="" class="block4-glav-kv-icon" aria-hidden="true">
+                            <p class="block4-glav-kv-title">Коррозионные вещества</p>
+                            <p class="block4-glav-kv-text">Кислоты, щёлочи и&nbsp;другая химическая продукция.</p>
+                        </div>
+                        <div class="block4-glav-kv reveal">
+                            <img src="image/block4-glav/ico5.svg" alt="" class="block4-glav-kv-icon" aria-hidden="true">
+                            <p class="block4-glav-kv-title">Бытовая и промышленная химия, реактивы</p>
+                        </div>
+                        <div class="block4-glav-kv reveal">
+                            <img src="image/block4-glav/ico6.svg" alt="" class="block4-glav-kv-icon" aria-hidden="true">
+                            <p class="block4-glav-kv-title">Зарядки и повербанки для разных устройств</p>
+                        </div>
+                    </div>
+                    <p class="block4-glav-text-h2 reveal">Прочие опасные вещества и изделия — в том числе литиевые батареи, аккумуляторы, оборудование и&nbsp;электроника с элементами питания, радиоактивные материалы.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK5-ALGO: Способы перевозки -->
+        <section class="block5-algo" id="transport">
+            <div class="main-container">
+                <h2 class="block5-algo__title reveal">
+                    Способы перевозки опасных грузов из&nbsp;Китая
+                </h2>
+
+                <div class="block5-algo__steps">
+                    <div class="block5-algo__step reveal">
+                        <div class="block5-algo__step-header">
+                            <img src="image/block5-glav/arrow-green.svg" alt="" class="block5-algo__icon" aria-hidden="true">
+                            <div class="block5-algo__step-body">
+                                <h3 class="block5-algo__step-title">Морская перевозка</h3>
+                                <p class="block5-algo__text">
+                                    Морская доставка подходит для крупных партий, контейнерных отправок и&nbsp;грузов, для которых скорость не&nbsp;является главным условием. В&nbsp;зависимости от&nbsp;характеристик продукции организуем перевозку в&nbsp;составе контейнерной или специализированной отправки. Перед бронированием проверяем, принимает&nbsp;ли судоходная линия конкретный класс опасности, и&nbsp;согласовываем документацию. Для морской перевозки применяются требования Международного морского кодекса по&nbsp;опасным грузам&nbsp;— IMDG Code.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block5-algo__step reveal">
+                        <div class="block5-algo__step-header">
+                            <img src="image/block5-glav/arrow-green.svg" alt="" class="block5-algo__icon" aria-hidden="true">
+                            <div class="block5-algo__step-body">
+                                <h3 class="block5-algo__step-title">Железнодорожная перевозка</h3>
+                                <p class="block5-algo__text">
+                                    Железнодорожная доставка опасных грузов из&nbsp;Китая позволяет перевозить значительные объёмы и&nbsp;может стать альтернативой морскому или автомобильному маршруту. Она востребована при поставках химического сырья, промышленной продукции, аккумуляторов и&nbsp;других регулируемых грузов.
+                                </p>
+                                <p class="block5-algo__text">
+                                    Маршрут и&nbsp;возможность доставки согласовываются с&nbsp;учётом класса опасности, станции отправления и&nbsp;назначения, типа подвижного состава и&nbsp;правил железнодорожных операторов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block5-algo__step reveal">
+                        <div class="block5-algo__step-header">
+                            <img src="image/block5-glav/arrow-green.svg" alt="" class="block5-algo__icon" aria-hidden="true">
+                            <div class="block5-algo__step-body">
+                                <h3 class="block5-algo__step-title">Автомобильная доставка</h3>
+                                <p class="block5-algo__text">
+                                    Автомобильная перевозка позволяет организовать забор продукции со&nbsp;склада китайского поставщика, доставку до&nbsp;терминала и&nbsp;транспортировку получателю в&nbsp;России. Автотранспорт также используется на&nbsp;отдельных участках мультимодального маршрута.
+                                </p>
+                                <p class="block5-algo__text">
+                                    Для перевозки подбираются допущенные транспортные средства и&nbsp;подготовленные водители. Учитываются требования ДОПОГ, ограничения по&nbsp;маршруту, совместимость грузов и&nbsp;необходимость дополнительных разрешений.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block5-algo__step reveal">
+                        <div class="block5-algo__step-header">
+                            <img src="image/block5-glav/arrow-green.svg" alt="" class="block5-algo__icon" aria-hidden="true">
+                            <div class="block5-algo__step-body">
+                                <h3 class="block5-algo__step-title">Авиаперевозка</h3>
+                                <p class="block5-algo__text">
+                                    Авиадоставка используется для срочных, небольших и&nbsp;дорогостоящих партий. При этом авиационные перевозчики предъявляют наиболее строгие требования к&nbsp;характеристикам продукции, документам, упаковке и&nbsp;маркировке.
+                                </p>
+                                <p class="block5-algo__text">
+                                    До бронирования мы проверяем возможность перевозки заявленного груза по&nbsp;правилам IATA DGR и&nbsp;требованиям выбранной авиакомпании. Отдельное внимание уделяется литиевым батареям и&nbsp;оборудованию со&nbsp;встроенными аккумуляторами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK6-GLAV: Этапы работ -->
+        <section class="block6-glav">
+            <div class="section-container">
+                <div class="block6-glav-cards">
+                    <div class="block6-glav-cards-row block6-glav-cards-row-top">
+                        <div class="block6-glav-cards-empty">
+                            <h1 class="block6-glav-cards-empty-h1">Как проходит<br><span class="block6-glav-cards-empty-h1-green block6-text-sea">перевозка</span>
+                                <span class="block6-glav-cards-empty-h1-green block6-text-auto">перевозка</span>
+                            </h1>
+                        </div>
+                        <div class="block6-glav-cards-group">
+                            <div class="block6-glav-kv">
+                                <div class="block6-glav-kv-content">
+                                    <h2 class="block6-glav-kv-h2">1. Заявка на сайте</h2>
+                                    <p class="block6-glav-kv-text">Получаем заявку — вы направляете описание товара, документы, вес, объём и&nbsp;пункты маршрута. Проверяем номер ООН, класс опасности, группу упаковки и&nbsp;ограничения.</p>
+                                </div>
+                            </div>
+                            <div class="block6-glav-kv">
+                                <div class="block6-glav-kv-content">
+                                    <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                        <span>2. Подготовка КП</span>
+                                        <div class="block6-glav-kv-badge">1 день</div>
+                                    </h2>
+                                    <p class="block6-glav-kv-text">Подбираем способ доставки. Сравниваем все виды маршрутов и&nbsp;направляем вам КП. Дальше получаем подтверждение перевозчика, терминала и&nbsp;других участников маршрута.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block6-glav-cards-row block6-glav-cards-row-bottom">
+                        <div class="block6-glav-kv">
+                            <div class="block6-glav-kv-content">
+                                <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                    <span>3. Доставка по Китаю</span>
+                                    <div class="block6-glav-kv-badge">от 2 дней</div>
+                                </h2>
+                                <p class="block6-glav-kv-text">Проверяем упаковку и&nbsp;документы. Забираем товар от&nbsp;поставщика до&nbsp;пункта отправки. Организуем международную перевозку.</p>
+                            </div>
+                        </div>
+                        <div class="block6-glav-kv">
+                            <div class="block6-glav-kv-content">
+                                <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                    <span>4. Таможенное оформление</span>
+                                    <div class="block6-glav-kv-badge">от 2 часов</div>
+                                </h2>
+                                <p class="block6-glav-kv-text">Сопровождаем декларирование и&nbsp;выпуск товара.</p>
+                            </div>
+                        </div>
+                        <div class="block6-glav-kv">
+                            <div class="block6-glav-kv-content">
+                                <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                    <span>5. Доставка по РФ</span>
+                                    <div class="block6-glav-kv-badge">от 5 дней</div>
+                                </h2>
+                                <p class="block6-glav-kv-text">Организуем перевозку до&nbsp;склада или производственной площадки получателя.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Адаптивная версия для планшетов и мобильных -->
+                <div class="block6-glav-adaptive">
+                    <div class="block6-glav-adaptive-row-1">
+                        <div class="block6-glav-cards-empty">
+                            <h1 class="block6-glav-cards-empty-h1">Как проходит<br><span class="block6-glav-cards-empty-h1-green block6-text-sea">перевозка</span>
+                                <span class="block6-glav-cards-empty-h1-green block6-text-auto">перевозка</span>
+                            </h1>
+                        </div>
+                        <div class="block6-glav-kv">
+                            <div class="block6-glav-kv-content">
+                                <h2 class="block6-glav-kv-h2">1. Заявка на сайте</h2>
+                                <p class="block6-glav-kv-text">Получаем заявку — вы направляете описание товара, документы, вес, объём и&nbsp;пункты маршрута. Проверяем номер ООН, класс опасности, группу упаковки и&nbsp;ограничения.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block6-glav-adaptive-row-2">
+                        <div class="block6-glav-adaptive-left">
+                            <div class="block6-glav-kv">
+                                <div class="block6-glav-kv-content">
+                                    <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                        <span>2. Подготовка КП</span>
+                                        <div class="block6-glav-kv-badge">1 день</div>
+                                    </h2>
+                                    <p class="block6-glav-kv-text">Подбираем способ доставки. Сравниваем все виды маршрутов и&nbsp;направляем вам КП. Дальше получаем подтверждение перевозчика, терминала и&nbsp;других участников маршрута.</p>
+                                </div>
+                            </div>
+                            <div class="block6-glav-kv">
+                                <div class="block6-glav-kv-content">
+                                    <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                        <span>4. Таможенное оформление</span>
+                                        <div class="block6-glav-kv-badge">от 2 часов</div>
+                                    </h2>
+                                    <p class="block6-glav-kv-text">Сопровождаем декларирование и&nbsp;выпуск товара.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block6-glav-adaptive-right">
+                            <div class="block6-glav-kv">
+                                <div class="block6-glav-kv-content">
+                                    <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                        <span>3. Доставка по Китаю</span>
+                                        <div class="block6-glav-kv-badge">от 2 дней</div>
+                                    </h2>
+                                    <p class="block6-glav-kv-text">Проверяем упаковку и&nbsp;документы. Забираем товар от&nbsp;поставщика до&nbsp;пункта отправки. Организуем международную перевозку.</p>
+                                </div>
+                            </div>
+                            <div class="block6-glav-kv">
+                                <div class="block6-glav-kv-content">
+                                    <h2 class="block6-glav-kv-h2 block6-glav-kv-h2-with-badge">
+                                        <span>5. Доставка по РФ</span>
+                                        <div class="block6-glav-kv-badge">от 5 дней</div>
+                                    </h2>
+                                    <p class="block6-glav-kv-text">Организуем перевозку до&nbsp;склада или производственной площадки получателя.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK7-TASKS: Упаковка и маркировка -->
+        <section class="block7-tasks">
+            <div class="section-container">
+                <h2 class="block7-tasks__title reveal">Упаковка и&nbsp;маркировка</h2>
+
+                <p class="block7-tasks__intro reveal">Опасный груз должен быть упакован с учётом его физических и химических свойств, класса опасности, группы упаковки и условий транспортировки. Обычная экспортная тара может не соответствовать требованиям международного перевозчика. При подготовке отправления проверяются:</p>
+
+                <ol class="block7-tasks__points">
+                    <li class="block7-tasks__point reveal">
+                        <span class="block7-tasks__num" aria-hidden="true">1</span>
+                        <span class="block7-tasks__point-text">Прочность и&nbsp;герметичность внутренней и&nbsp;внешней упаковки. А&nbsp;также защиту от&nbsp;протекания, короткого замыкания и&nbsp;механических повреждений.</span>
+                    </li>
+                    <li class="block7-tasks__point reveal">
+                        <span class="block7-tasks__num" aria-hidden="true">2</span>
+                        <span class="block7-tasks__point-text">Совместимость материала тары&nbsp;и&nbsp;содержимым и&nbsp;наличие знаков опасности и&nbsp;манипуляционных обозначений. Маркировка номером ООН.</span>
+                    </li>
+                    <li class="block7-tasks__point reveal">
+                        <span class="block7-tasks__num" aria-hidden="true">3</span>
+                        <span class="block7-tasks__point-text">Соответствие количества груза ограничениям для выбранного транспорта. Правильность размещения и&nbsp;крепления груза.</span>
+                    </li>
+                </ol>
+
+                <p class="block7-tasks__outro reveal">При необходимости организуем дополнительную упаковку или переупаковку на&nbsp;территории Китая.</p>
+            </div>
+        </section>
+
+        <!-- BLOCK8-FLAGS: Литиевые батареи -->
+        <section class="block8-flags" id="red-flags">
+            <div class="main-container">
+                <div class="block8-flags__intro">
+                    <h2 class="block8-flags__title block8-flags__reveal">
+                        Доставка литиевых батарей и&nbsp;аккумуляторов из&nbsp;Китая
+                    </h2>
+                    <p class="block8-flags__desc block8-flags__reveal">
+                        Литий-ионные и&nbsp;литий-металлические батареи относятся к&nbsp;опасным грузам класса&nbsp;9. Требования к&nbsp;отправке зависят от типа элементов питания, их&nbsp;характеристик и&nbsp;способа комплектации:
+                    </p>
+                </div>
+                <div class="block8-flags__grid">
+                    <div class="block8-flags__media block8-flags__reveal">
+                        <img
+                            class="block8-flags__image"
+                            src="image/block8-glav/shield.png"
+                            alt="Литиевые батареи"
+                            width="280"
+                            height="320"
+                        >
+                    </div>
+                    <ul class="block8-flags__tags">
+                        <li class="block8-flags__tag block8-flags__reveal">
+                            <img class="block8-flags__tag-icon" src="image/block8-glav/Battery.svg" alt="" aria-hidden="true">
+                            <span class="block8-flags__tag-text">
+                                Батареи перевозятся отдельно
+                            </span>
+                        </li>
+                        <li class="block8-flags__tag block8-flags__reveal">
+                            <img class="block8-flags__tag-icon" src="image/block8-glav/icon-box.svg" alt="" aria-hidden="true">
+                            <span class="block8-flags__tag-text">
+                                Упакованы вместе с&nbsp;оборудованием
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="block8-flags__tags">
+                        <li class="block8-flags__tag block8-flags__reveal">
+                            <img class="block8-flags__tag-icon" src="image/block8-glav/Car.svg" alt="" aria-hidden="true">
+                            <span class="block8-flags__tag-text">
+                                Отправляются как новые изделия, прототипы, использованные аккумуляторы
+                            </span>
+                        </li>
+                        <li class="block8-flags__tag block8-flags__reveal">
+                            <img class="block8-flags__tag-icon" src="image/block8-glav/charger.svg" alt="" aria-hidden="true">
+                            <span class="block8-flags__tag-text">
+                                Установлены внутри оборудования
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block8-flags__outro block8-flags__reveal">
+                    <p class="block8-flags__outro-text">Для согласования могут потребоваться паспорт безопасности MSDS, сводка испытаний, техническая спецификация и&nbsp;документы на&nbsp;упаковку. Перевозчик проверяет мощность и&nbsp;массу батареи, состояние элементов, способ защиты контактов и&nbsp;соответствие тары требованиям выбранного транспорта.</p>
+                    <p class="block8-flags__outro-text">STA СибирьТрансАзия организует доставку батареек, аккумуляторов, портативной электроники, оборудования, электроприборов и&nbsp;другой продукции с&nbsp;литиевыми элементами питания из&nbsp;Китая.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK9-ALGO: Таможенное оформление -->
+        <section class="block9-algo" id="customs">
+            <div class="main-container">
+                <h2 class="block9-algo__title reveal">
+                    Таможенное оформление опасных грузов
+                </h2>
+                <p class="block9-algo__intro reveal">
+                    Организуем таможенное сопровождение поставки из&nbsp;Китая. Для подготовки оформления проверяем описание продукции, код&nbsp;ТН&nbsp;ВЭД, стоимость, назначение товара и&nbsp;наличие разрешительной документации.
+                </p>
+
+                <div class="block9-algo__steps">
+                    <div class="block9-algo__step reveal">
+                        <div class="block9-algo__step-header">
+                            <img src="image/block5-glav/arrow-green.svg" alt="" class="block9-algo__icon" aria-hidden="true">
+                            <div class="block9-algo__step-body">
+                                <h3 class="block9-algo__step-title">Что входит в&nbsp;комплекс работ?</h3>
+                                <div class="block9-algo__list-group">
+                                    <ul class="block9-algo__list">
+                                        <li class="block9-algo__list-item">проверка внешнеторговых документов;</li>
+                                        <li class="block9-algo__list-item">подготовка сведений для таможенного декларирования;</li>
+                                        <li class="block9-algo__list-item">подбор кода&nbsp;ТН&nbsp;ВЭД;</li>
+                                        <li class="block9-algo__list-item">расчёт таможенных платежей;</li>
+                                        <li class="block9-algo__list-item">проверка необходимости сертификата или декларации соответствия;</li>
+                                        <li class="block9-algo__list-item">оформление декларации на&nbsp;товары;</li>
+                                        <li class="block9-algo__list-item">сопровождение таможенного досмотра и&nbsp;дополнительных запросов;</li>
+                                        <li class="block9-algo__list-item">организация доставки после выпуска груза.</li>
+                                    </ul>
+                                </div>
+                                <p class="block9-algo__text">
+                                    Требования транспортного законодательства и&nbsp;таможенные требования рассматриваются отдельно. Возможность перевозки товара не&nbsp;отменяет необходимости получить предусмотренные законом разрешения на&nbsp;его ввоз или оборот.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block9-algo__step reveal">
+                        <div class="block9-algo__step-header">
+                            <img src="image/block5-glav/arrow-green.svg" alt="" class="block9-algo__icon" aria-hidden="true">
+                            <div class="block9-algo__step-body">
+                                <h3 class="block9-algo__step-title">Какие документы нужны для перевозки?</h3>
+                                <p class="block9-algo__text">
+                                    Точный комплект документов зависит от&nbsp;продукции, класса опасности, маршрута и&nbsp;вида транспорта. Как правило, для организации доставки могут понадобиться:
+                                </p>
+                                <div class="block9-algo__list-group">
+                                    <ul class="block9-algo__list">
+                                        <li class="block9-algo__list-item">паспорт безопасности MSDS/SDS;</li>
+                                        <li class="block9-algo__list-item">техническое описание или спецификация товара;</li>
+                                        <li class="block9-algo__list-item">номер ООН и&nbsp;надлежащее отгрузочное наименование;</li>
+                                        <li class="block9-algo__list-item">сведения о&nbsp;классе и&nbsp;подклассе опасности;</li>
+                                        <li class="block9-algo__list-item">данные о&nbsp;группе упаковки;</li>
+                                        <li class="block9-algo__list-item">инвойс и&nbsp;упаковочный лист;</li>
+                                        <li class="block9-algo__list-item">экспортная декларация;</li>
+                                        <li class="block9-algo__list-item">декларация отправителя на&nbsp;опасный груз;</li>
+                                        <li class="block9-algo__list-item">сертификаты на&nbsp;тару и&nbsp;упаковку;</li>
+                                        <li class="block9-algo__list-item">протокол и&nbsp;сводка испытаний UN&nbsp;38.3 для литиевых батарей;</li>
+                                        <li class="block9-algo__list-item">разрешения и&nbsp;согласования для отдельных категорий продукции;</li>
+                                        <li class="block9-algo__list-item">транспортные и&nbsp;таможенные документы.</li>
+                                    </ul>
+                                </div>
+                                <p class="block9-algo__text">
+                                    Если документы китайского поставщика содержат неполные или противоречивые сведения, специалисты STA СибирьТрансАзия сообщат, что необходимо уточнить до&nbsp;бронирования перевозки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK10-GLAV: FAQ -->
+        <section class="block10-glav">
+            <div class="section-container">
+                <div class="block10-glav-container">
+                    <h2 class="block10-glav-title">Ответы на&nbsp;популярные вопросы</h2>
+
+                    <div class="block10-glav-item">
+                        <div class="block10-glav-question">
+                            <div class="block10-glav-question-text">Можно ли перевезти опасный груз без&nbsp;MSDS?</div>
+                            <img src="image/block10-glav/chavo-strelka.svg" alt="" class="block10-glav-arrow" aria-hidden="true">
+                        </div>
+                        <div class="block10-glav-answer">
+                            <div class="block10-glav-answer-content">Для большинства химических и&nbsp;потенциально опасных товаров паспорт безопасности необходим для предварительной классификации и&nbsp;согласования. Если поставщик не&nbsp;предоставил MSDS, сначала потребуется получить корректный документ или провести дополнительную идентификацию продукции.</div>
+                        </div>
+                    </div>
+
+                    <div class="block10-glav-item">
+                        <div class="block10-glav-question">
+                            <div class="block10-glav-question-text">Вы доставляете грузы с&nbsp;литиевыми аккумуляторами?</div>
+                            <img src="image/block10-glav/chavo-strelka.svg" alt="" class="block10-glav-arrow" aria-hidden="true">
+                        </div>
+                        <div class="block10-glav-answer">
+                            <div class="block10-glav-answer-content">Да. Организуем перевозку отдельных батарей, аккумуляторов, электроники и&nbsp;оборудования со&nbsp;встроенными элементами питания. Условия зависят от&nbsp;типа батареи, её&nbsp;характеристик, комплектации и&nbsp;выбранного транспорта.</div>
+                        </div>
+                    </div>
+
+                    <div class="block10-glav-item">
+                        <div class="block10-glav-question">
+                            <div class="block10-glav-question-text">Можно ли отправить опасный груз сборной партией?</div>
+                            <img src="image/block10-glav/chavo-strelka.svg" alt="" class="block10-glav-arrow" aria-hidden="true">
+                        </div>
+                        <div class="block10-glav-answer">
+                            <div class="block10-glav-answer-content">Для некоторых классов и&nbsp;на&nbsp;отдельных маршрутах сборная перевозка возможна. Решение принимается после проверки совместимости, упаковки, количества продукции и&nbsp;правил конкретного перевозчика.</div>
+                        </div>
+                    </div>
+
+                    <div class="block10-glav-item">
+                        <div class="block10-glav-question">
+                            <div class="block10-glav-question-text">Какой способ доставки выбрать?</div>
+                            <img src="image/block10-glav/chavo-strelka.svg" alt="" class="block10-glav-arrow" aria-hidden="true">
+                        </div>
+                        <div class="block10-glav-answer">
+                            <div class="block10-glav-answer-content">Море обычно подходит для крупных несрочных партий, железная дорога — для регулярных поставок и&nbsp;значительных объёмов, автомобильный транспорт — для гибких маршрутов, авиация — для срочных отправок. Итоговый вариант зависит от&nbsp;класса опасности и&nbsp;допуска перевозчика.</div>
+                        </div>
+                    </div>
+
+                    <div class="block10-glav-item">
+                        <div class="block10-glav-question">
+                            <div class="block10-glav-question-text">Работаете ли вы со&nbsp;взрывчатыми и&nbsp;радиоактивными материалами?</div>
+                            <img src="image/block10-glav/chavo-strelka.svg" alt="" class="block10-glav-arrow" aria-hidden="true">
+                        </div>
+                        <div class="block10-glav-answer">
+                            <div class="block10-glav-answer-content">Да, STA СибирьТрансАзия работает с&nbsp;грузами 1–9 классов. Перевозка взрывчатых, радиоактивных и&nbsp;других особо регулируемых материалов организуется только после документальной проверки, получения обязательных разрешений и&nbsp;подтверждения всех участников маршрута.</div>
+                        </div>
+                    </div>
+
+                    <div class="block10-glav-item">
+                        <div class="block10-glav-question">
+                            <div class="block10-glav-question-text">Доставляете ли вы опасные грузы по&nbsp;России?</div>
+                            <img src="image/block10-glav/chavo-strelka.svg" alt="" class="block10-glav-arrow" aria-hidden="true">
+                        </div>
+                        <div class="block10-glav-answer">
+                            <div class="block10-glav-answer-content">Да. После прохождения международного участка и&nbsp;таможенного оформления организуем доставку груза до&nbsp;получателя в&nbsp;регионе назначения с&nbsp;соблюдением применимых требований к&nbsp;перевозке.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK11-GLAV: Форма расчёта -->
+        <section class="block11-glav">
+            <div class="section-container">
+                <h2 class="block11-glav-h1-mobile reveal">Заказать перевозку опасного груза из Китая</h2>
+                <p class="block11-glav-text-mobile reveal">Расскажите про свой груз и мы перезвоним вам через 15 минут! Для Вас мы подберем выгодный маршрут, способ упаковки и&nbsp;предоставим несколько КП на выбор.</p>
+
+                <div class="block11-glav-content">
+                    <div class="block11-glav-left">
+                        <h2 class="block11-glav-h1 reveal">Заказать перевозку опасного груза из Китая</h2>
+                        <p class="block11-glav-text reveal">Расскажите про свой груз и мы перезвоним вам через 15 минут! Для Вас мы подберем выгодный маршрут, способ упаковки и&nbsp;предоставим несколько КП на выбор.</p>
+
+                        <form class="block11-glav-form reveal">
+                            <div class="block11-glav-form-group">
+                                <label class="block11-glav-form-label" for="block11-name">Ф.И.О</label>
+                                <input id="block11-name" type="text" class="block11-glav-form-input" name="name" autocomplete="name">
+                            </div>
+
+                            <div class="block11-glav-form-group">
+                                <label class="block11-glav-form-label" for="block11-phone">Телефон <span class="required">*</span></label>
+                                <input id="block11-phone" type="tel" class="block11-glav-form-input" name="phone" autocomplete="tel" required>
+                            </div>
+
+                            <div class="block11-glav-form-group">
+                                <label class="block11-glav-form-label" for="block11-comment">Комментарий</label>
+                                <textarea id="block11-comment" class="block11-glav-form-textarea" name="comment"></textarea>
+                            </div>
+
+                            <div class="block11-glav-checkbox-group">
+                                <input type="checkbox" class="block11-glav-checkbox" id="block11-privacy">
+                                <label for="block11-privacy" class="block11-glav-checkbox-text">
+                                    Я соглашаюсь с&nbsp;<a href="#">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                        </form>
+
+                        <button class="block11-glav-button reveal" type="button">Получить расчет</button>
+                    </div>
+                    <div class="block11-glav-right">
+                        <img src="image/block11-glav/Autor.png" alt="Расчет стоимости" class="block11-glav-img reveal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCK12-GLAV: Другие услуги -->
+        <section class="block12-glav" id="articles">
+            <div class="section-container">
+                <h2 class="block12-glav-h1 reveal">Другие услуги</h2>
+
+                <div class="block12-glav-cards">
+                    <div class="block12-glav-cards-wrapper">
+                        <a href="https://sibtransasia.ru/service/dostavka-gruzov-iz-kitaa-morem" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Морские грузоперевозки</h3>
+                            <p class="block12-glav-card-text">Дешевая доставка из&nbsp;Китая до&nbsp;Вашего склада.</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/aviadostavka-iz-kitaa" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Авиадоставка</h3>
+                            <p class="block12-glav-card-text">Безопасная доставка грузов в&nbsp;короткие сроки.</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/zeleznodoroznaa-dostavka-gruzov-iz-kitaa" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Железнодорожная доставка</h3>
+                            <p class="block12-glav-card-text">Ж/д доставка за&nbsp;20–30 дней</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/blog/oborudovanie-iz-kitaya" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Оборудование из&nbsp;Китая</h3>
+                        </a>
+                        <a href="https://sibtransasia.ru/blog/dostavka-sbornyh-gruzov-iz-kitaa-v-moskvu" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Доставка сборных грузов в&nbsp;Москву</h3>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/stanki-dlya-izgotovleniya-samorezov" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Станки для&nbsp;производства саморезов</h3>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/avtoperevozki-iz-kitaya" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Автодоставка</h3>
+                            <p class="block12-glav-card-text">Доставка через Казахстан с&nbsp;бесплатным хранением на&nbsp;СВХ</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/poisk-postavsikov-v-kitae" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Поиск поставщиков и&nbsp;производителей</h3>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/dostavka-sbornikh-gruzov-iz-kitaya-po-zhd" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Сборные грузы</h3>
+                            <p class="block12-glav-card-text">Сроки доставки: до&nbsp;30 дней</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/tamozhennoe-oformlenie-gruzov" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Таможенное оформление грузов</h3>
+                            <p class="block12-glav-card-text">Оформление без&nbsp;переплаты пошлин. 90% деклараций «с&nbsp;колес».</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/dostavka-negabaritnyh-gruzov-iz-kitaya" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Негабаритные грузы</h3>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/svh" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Хранение на&nbsp;СВХ</h3>
+                            <p class="block12-glav-card-text">Хранение груза в&nbsp;охраняемом утепленном складе временного хранения.</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/dostavka-konteynerov-iz-kitaya-po-zhd" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Контейнерные ЖД перевозки</h3>
+                            <p class="block12-glav-card-text">Таможенное оформление с&nbsp;нашими специалистами на&nbsp;ст.&nbsp;Локоть</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/finansovoe-soprovozdenie" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Финансовое сопровождение сделок</h3>
+                            <p class="block12-glav-card-text">Перевод денежных средств в&nbsp;Китай до&nbsp;2 дней</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/tamozhennyy-yurist" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Профессиональные юридические услуги ВЭД</h3>
+                            <p class="block12-glav-card-text">Юридическая помощь от&nbsp;специалистов ВЭД с&nbsp;опытом 17+ лет</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/dostavka-gruza-iz-kitaya-optom" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Оптовые поставки</h3>
+                            <p class="block12-glav-card-text">Полный цикл услуг: от&nbsp;поиска поставщика до&nbsp;доставки на&nbsp;Ваш склад</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/dostavka-gruzov-iz-kitaya" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Доставка грузов из&nbsp;Китая</h3>
+                            <p class="block12-glav-card-text">Полный цикл услуг от&nbsp;профессионалов с&nbsp;опытом 17+ лет в&nbsp;ВЭД</p>
+                        </a>
+                        <a href="https://sibtransasia.ru/service/dostavka-stankov-po-metallu-iz-kitaya" class="block12-glav-card reveal" target="_blank" rel="noopener noreferrer">
+                            <h3 class="block12-glav-card-h2">Станки по&nbsp;металлу</h3>
+                            <p class="block12-glav-card-text">Контроль качества оборудования в&nbsp;Китае нашим инженером</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="block12-glav-pagination reveal">
+                    <span class="block12-glav-pagination-dot active"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                    <span class="block12-glav-pagination-dot"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<script>
+        (function initScrollReveal() {
+            function isRevealVisible(el) {
+                var node = el;
+                while (node && node !== document.body) {
+                    if (window.getComputedStyle(node).display === 'none') return false;
+                    node = node.parentElement;
+                }
+                return true;
+            }
+
+            var nodes = Array.prototype.filter.call(
+                document.querySelectorAll('.reveal, .block8-flags__reveal, .block10-glav-item'),
+                isRevealVisible
+            );
+
+            if (!nodes.length) return;
+
+            var pending = [];
+            var scheduled = false;
+            var stagger = 0.14;
+
+            function flush() {
+                pending.forEach(function (el, index) {
+                    var delay = (index * stagger) + 's';
+                    el.style.animationDelay = delay;
+                    el.style.transitionDelay = delay;
+                    el.classList.add('is-inview');
+                });
+                pending = [];
+                scheduled = false;
+            }
+
+            function reveal(el) {
+                if (el.classList.contains('is-inview')) return;
+                pending.push(el);
+                if (scheduled) return;
+                scheduled = true;
+                requestAnimationFrame(flush);
+            }
+
+            if (!('IntersectionObserver' in window)) {
+                nodes.forEach(reveal);
+                return;
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    observer.unobserve(entry.target);
+                    reveal(entry.target);
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: '0px 0px -64px 0px'
+            });
+
+            nodes.forEach(function (el) {
+                observer.observe(el);
+            });
+        })();
+    </script>
+
+<script>
+        (function initBlock3CardsAnimation() {
+            function start() {
+                var block3 = document.querySelector('.block3-glav');
+                if (!block3) return;
+
+                var animated = false;
+
+                function tryAnimate() {
+                    if (animated) return;
+
+                    var desktopCard = document.querySelector('.block3-glav-cards .block3-glav-kv:nth-child(2)');
+                    var adaptiveCard = document.querySelector('.block3-glav-adaptive .block3-glav-cards-row-1 .block3-glav-kv:nth-child(2)');
+                    var isMobile = window.innerWidth <= 1000;
+                    var targetCard = isMobile ? adaptiveCard : (desktopCard || adaptiveCard);
+
+                    var cardRect = targetCard ? targetCard.getBoundingClientRect() : null;
+                    var isCardVisible = cardRect && cardRect.top < window.innerHeight - 100 && cardRect.bottom > 0;
+
+                    if (targetCard && isCardVisible && !block3.classList.contains('cards-animated')) {
+                        block3.classList.add('cards-animated');
+                        animated = true;
+
+                        Array.prototype.forEach.call(
+                            document.querySelectorAll('.block3-glav-kv-dots, .block3-glav-kv-message'),
+                            function (el) { el.classList.add('animate'); }
+                        );
+                    }
+                }
+
+                tryAnimate();
+                window.addEventListener('scroll', tryAnimate);
+                window.addEventListener('resize', tryAnimate);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', start);
+            } else {
+                start();
+            }
+        })();
+</script>
+
+<script>
+        (function initBlock10Faq() {
+            var items = document.querySelectorAll('.block10-glav-item');
+            Array.prototype.forEach.call(items, function (item) {
+                var question = item.querySelector('.block10-glav-question');
+                if (!question) return;
+                question.addEventListener('click', function () {
+                    item.classList.toggle('active');
+                });
+            });
+        })();
+</script>
+
+<script>
+        (function initBlock12Articles() {
+            var block12 = document.getElementById('articles');
+            if (!block12) return;
+
+            var cardsWrapper = block12.querySelector('.block12-glav-cards-wrapper');
+            var cards = block12.querySelectorAll('.block12-glav-card');
+            var dots = block12.querySelectorAll('.block12-glav-pagination-dot');
+            if (!cardsWrapper || !cards.length || !dots.length) return;
+
+            var currentDot = 0;
+            var autoplayInterval = null;
+            var isPaused = false;
+
+            function isMobileStack() {
+                return window.innerWidth <= 700;
+            }
+
+            function getPerSlide() {
+                return window.innerWidth <= 1000 ? 2 : 3;
+            }
+
+            function getTotalDots() {
+                return Math.ceil(cards.length / getPerSlide());
+            }
+
+            function stopAutoplay() {
+                if (autoplayInterval) {
+                    clearInterval(autoplayInterval);
+                    autoplayInterval = null;
+                }
+            }
+
+            function resetMobileStack() {
+                cardsWrapper.style.transform = 'none';
+                stopAutoplay();
+            }
+
+            function showCards(dotIndex) {
+                if (isMobileStack()) {
+                    resetMobileStack();
+                    return;
+                }
+
+                var totalDots = getTotalDots();
+                var perSlide = getPerSlide();
+                var cardWidth = cards[0].offsetWidth;
+                var wrapperStyle = window.getComputedStyle(cardsWrapper);
+                var gap = parseFloat(wrapperStyle.gap) || 30;
+                var translateX = -(dotIndex * perSlide * (cardWidth + gap));
+                cardsWrapper.style.transform = 'translateX(' + translateX + 'px)';
+
+                var pagination = block12.querySelector('.block12-glav-pagination');
+                if (pagination) pagination.removeAttribute('style');
+
+                Array.prototype.forEach.call(dots, function (dot, idx) {
+                    if (idx === dotIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                    dot.style.display = idx < totalDots ? 'block' : 'none';
+                });
+
+                currentDot = dotIndex;
+            }
+
+            function startAutoplay() {
+                if (isMobileStack() || autoplayInterval) return;
+
+                autoplayInterval = setInterval(function () {
+                    if (!isPaused && !isMobileStack()) {
+                        var totalDots = getTotalDots();
+                        var nextDot = (currentDot + 1) % totalDots;
+                        showCards(nextDot);
+                    }
+                }, 3000);
+            }
+
+            Array.prototype.forEach.call(dots, function (dot, i) {
+                dot.addEventListener('click', function () {
+                    if (isMobileStack()) return;
+                    var totalDots = getTotalDots();
+                    if (i >= totalDots) return;
+                    showCards(i);
+                    stopAutoplay();
+                    setTimeout(startAutoplay, 3000);
+                });
+            });
+
+            window.addEventListener('resize', function () {
+                setTimeout(function () {
+                    if (isMobileStack()) {
+                        resetMobileStack();
+                        return;
+                    }
+
+                    var totalDots = getTotalDots();
+                    if (currentDot >= totalDots) {
+                        currentDot = 0;
+                    }
+                    showCards(currentDot);
+                    startAutoplay();
+                }, 100);
+            });
+
+            if (isMobileStack()) {
+                resetMobileStack();
+            } else {
+                showCards(0);
+                startAutoplay();
+            }
+
+            var cardsViewport = block12.querySelector('.block12-glav-cards');
+            if (!cardsViewport) return;
+
+            var wheelTimeout = null;
+            cardsViewport.addEventListener('wheel', function (e) {
+                if (isMobileStack()) return;
+
+                e.preventDefault();
+
+                if (wheelTimeout) return;
+                wheelTimeout = setTimeout(function () {
+                    wheelTimeout = null;
+                }, 500);
+
+                stopAutoplay();
+
+                var totalDots = getTotalDots();
+                if (e.deltaY > 0) {
+                    showCards((currentDot + 1) % totalDots);
+                } else if (e.deltaY < 0) {
+                    showCards(currentDot === 0 ? totalDots - 1 : currentDot - 1);
+                }
+
+                setTimeout(startAutoplay, 3000);
+            });
+
+            cardsViewport.addEventListener('mouseenter', function () {
+                isPaused = true;
+            });
+
+            cardsViewport.addEventListener('mouseleave', function () {
+                isPaused = false;
+            });
+        })();
+</script>
+</body>
+</html>
